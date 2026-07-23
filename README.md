@@ -3,7 +3,7 @@
 Online course companion for **MIS 501: Application Development for the Data-Driven
 Organization** — a 17-module Python course for business graduate students.
 
-Live site: <https://gregbott.github.io/591-mis-501-course-companion/>
+Live site: <https://gregbott.github.io/MIS-501-Course-Companion/>
 
 ## What this is
 

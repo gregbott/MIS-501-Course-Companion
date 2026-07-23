@@ -5,6 +5,15 @@ All notable changes to the MIS 501 Course Companion are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+
+- Repository renamed from `591-mis-501-course-companion` to
+  `MIS-501-Course-Companion`. The site now lives at
+  <https://gregbott.github.io/MIS-501-Course-Companion/>; the previous Pages URL
+  no longer resolves (GitHub Pages does not redirect renamed project paths).
+
 ## [1.0.0] - 2026-07-24
 
 ### Added

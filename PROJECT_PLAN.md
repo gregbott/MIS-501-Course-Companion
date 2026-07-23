@@ -23,8 +23,8 @@ Status markers: `[ ]` pending · `[~]` in progress · `[x]` done · `[!]` blocke
   Q&A reference, computation-verification suite (`computations/` + `verify_all.py`),
   `CODE_EXAMPLE_MAPPING.md`, changelog, GitHub Pages deploy. BAN-501's ML content is NOT
   ported; all content here derives from the MIS 501 teaching notebooks.
-- **This repo:** `gregbott/591-mis-501-course-companion` (public), site at
-  `https://gregbott.github.io/591-mis-501-course-companion/`.
+- **This repo:** `gregbott/MIS-501-Course-Companion` (public; renamed from 591-mis-501-course-companion on 2026-07-24), site at
+  `https://gregbott.github.io/MIS-501-Course-Companion/`.
 
 ### User decisions (2026-07-23)
 
@@ -190,6 +190,11 @@ that file; agents report proposed entries instead of editing it.
 
 ## Findings & Decisions Log
 
+- **2026-07-24 (post-1.0.0):** Repo renamed to `MIS-501-Course-Companion` at Greg's
+  request. GitHub redirects the old repo URL; the old Pages URL does NOT redirect —
+  new site URL is https://gregbott.github.io/MIS-501-Course-Companion/. Updated
+  mkdocs.yml (site_url/repo_url/repo_name), README, this file's Context, and the
+  local git remote. Local folder name left as `591-mis-501-course-companion`.
 - **2026-07-24 (Phase 7):** Published. GitHub Pages enabled (Source: GitHub Actions)
   BEFORE the first push, so the first deploy succeeded. Live at
   https://gregbott.github.io/591-mis-501-course-companion/ (home + spot-checked module

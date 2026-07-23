@@ -1,10 +1,10 @@
 site_name: MIS 501 Course Companion
 site_description: Application Development for the Data-Driven Organization — Online Course Companion
 site_author: Gregory Bott
-site_url: https://gregbott.github.io/591-mis-501-course-companion/
+site_url: https://gregbott.github.io/MIS-501-Course-Companion/
 
-repo_url: https://github.com/gregbott/591-mis-501-course-companion
-repo_name: gregbott/591-mis-501-course-companion
+repo_url: https://github.com/gregbott/MIS-501-Course-Companion
+repo_name: gregbott/MIS-501-Course-Companion
 
 theme:
   name: material
