@@ -44,12 +44,12 @@ Status markers: `[ ]` pending · `[~]` in progress · `[x]` done · `[!]` blocke
 - [x] **Phase 1 — Repo scaffold & tooling.** `pixi.toml` (docs + compute envs),
   `mkdocs.yml`, docs skeleton + stubs, CI workflow, `.gitignore`, `README.md`,
   `CHANGELOG.md`. Done when `mkdocs build --strict` passes on the skeleton.
-- [~] **Phase 2 — Module content + computations (subagent fan-out).** For each of the
+- [x] **Phase 2 — Module content + computations (subagent fan-out).** For each of the
   17 modules: author `docs/modules/NN-slug.md` from `mNN_teaching.py` +
   `mNN_assignment.py`, and `computations/moduleN_examples.py` whose `demo_*()`
   functions produce every worked-example output verbatim. Agents run their own
   scripts (`pixi run -e compute python ...`) and paste real stdout into the docs.
-- [ ] **Phase 3 — Verification harness.** Adapt BAN-501's `verify_all.py` (numeric-aware
+- [x] **Phase 3 — Verification harness.** Adapt BAN-501's `verify_all.py` (numeric-aware
   comparison of doc Output blocks vs. actual demo stdout, ADJUDICATED allowlist).
   Run, reconcile every mismatch, generate `CODE_EXAMPLE_MAPPING.md`.
 - [ ] **Phase 4 — Q&A reference.** `docs/reference/qa.md`: ~6–8 common student
@@ -190,6 +190,14 @@ that file; agents report proposed entries instead of editing it.
 
 ## Findings & Decisions Log
 
+- **2026-07-23 (Phases 2–3):** All 17 modules authored by subagent fan-out (3 pilots,
+  then batches of 7). 233 demo functions; verify suite fully clean (222 PASS, 11
+  NO-NUMS qualitative, 0 FLAG/ERROR, empty ADJUDICATED — all prose-number flags were
+  resolved by digit-free rewrites or input-recap prints). CODE_EXAMPLE_MAPPING.md:
+  17 files → 233 functions → 17 pages, 0 problems. Notable conventions: modules
+  16/17 use the notebooks' own seed 501; modules 14/15 run fully offline via
+  embedded HTML/JSON samples; module 17 demos use the teaching notebook's
+  coffee-shop dataset, never the graded library dataset (answer firewall audited).
 - **2026-07-23 (Phase 1):** Repo scaffolded. Slugs/titles fixed in Module map above.
   Compute env excludes CUDA (course stack is CPU-only: polars, duckdb, matplotlib,
   plotly, numpy, requests, beautifulsoup4). Modules 14/15 demos must be offline
