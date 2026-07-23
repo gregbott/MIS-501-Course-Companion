@@ -1,0 +1,87 @@
+site_name: MIS 501 Course Companion
+site_description: Application Development for the Data-Driven Organization — Online Course Companion
+site_author: Gregory Bott
+site_url: https://gregbott.github.io/591-mis-501-course-companion/
+
+repo_url: https://github.com/gregbott/591-mis-501-course-companion
+repo_name: gregbott/591-mis-501-course-companion
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: ["."]
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - tables
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Modules:
+      - "1. Why Python & Environment Setup": modules/01-why-python-and-setup.md
+      - "2. Variables, Data Types & Expressions": modules/02-variables-and-types.md
+      - "3. Control Flow": modules/03-control-flow.md
+      - "4. Functions & Modular Thinking": modules/04-functions.md
+      - "5. Strings & Regular Expressions": modules/05-strings-and-regex.md
+      - "6. Data Structures: Lists & Tuples": modules/06-lists-and-tuples.md
+      - "7. Data Structures: Dictionaries & Sets": modules/07-dictionaries-and-sets.md
+      - "8. File I/O & Working with JSON": modules/08-file-io-and-json.md
+      - "9. Introduction to Polars": modules/09-polars-intro.md
+      - "10. Polars: Transformations & Aggregations": modules/10-polars-transformations.md
+      - "11. Visualization: Matplotlib & Plotly Express": modules/11-visualization.md
+      - "12. Marimo Interactive Features": modules/12-marimo-interactivity.md
+      - "13. DuckDB: SQL-Based Data Analysis": modules/13-duckdb-sql.md
+      - "14. Web Scraping": modules/14-web-scraping.md
+      - "15. REST APIs & Data Acquisition": modules/15-rest-apis.md
+      - "16. Capstone: Proposal & Data Acquisition": modules/16-capstone-proposal.md
+      - "17. Capstone: Analysis & Presentation": modules/17-capstone-analysis.md
+  - Reference:
+      - "Q&A Reference": reference/qa.md
+  - Changelog: changelog.md

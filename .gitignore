@@ -1,0 +1,17 @@
+# MkDocs build output
+site/
+
+# Pixi environments
+.pixi/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# marimo caches
+__marimo__/
+
+# Computation-verification artifacts (regenerable via `pixi run -e compute verify`)
+computations/_verify/
+computations/_scratch/

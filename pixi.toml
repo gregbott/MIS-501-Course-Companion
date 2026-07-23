@@ -1,0 +1,41 @@
+[workspace]
+name = "mis501-course-companion"
+version = "1.0.0"
+description = "MIS 501: Application Development for the Data-Driven Organization — Online Course Companion (MkDocs site + computation-verification suite)"
+authors = ["Gregory Bott <gregbott@gmail.com>"]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+# ---------------------------------------------------------------------------
+# Two environments:
+#   * default (docs) — lightweight; builds/serves the MkDocs site.
+#   * compute        — runs the computation-verification suite backing every
+#                      Worked Example in the docs. CPU-only course stack.
+# ---------------------------------------------------------------------------
+
+[feature.docs.dependencies]
+python = ">=3.12"
+mkdocs = ">=1.6"
+mkdocs-material = ">=9.5"
+
+[feature.docs.tasks]
+serve = { cmd = "mkdocs serve", description = "Serve the site locally with live reload (http://127.0.0.1:8000)" }
+build = { cmd = "mkdocs build --strict", description = "Build the static site (strict: fails on broken links/nav)" }
+
+[feature.compute.dependencies]
+python = ">=3.12"
+numpy = "*"
+polars = ">=1.0"
+pyarrow = "*"
+duckdb = ">=1.0"
+matplotlib = ">=3.8"
+plotly = ">=5.20"
+requests = ">=2.31"
+beautifulsoup4 = ">=4.12"
+
+[feature.compute.tasks]
+verify = { cmd = "python computations/verify_all.py", description = "Run all computation verifications against the docs" }
+
+[environments]
+default = ["docs"]
+compute = ["compute"]
