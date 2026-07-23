@@ -1206,7 +1206,7 @@ The notebook supplies its own dataset: monthly activity records for a fictional 
 
 **Task 6: Limitations and Next Steps (15 points).** Three *distinct* limitations (9 points, 3 each) — what the analysis cannot tell us and why that matters — and three concrete follow-up analyses (6 points, 2 each), each naming the data you would need, the method you would use, and the question it would answer. §17.5's limitations section shows the shape: specific boundaries, not vague humility.
 
-**Bonus: Interactive Marimo Element (10 points).** One marimo UI element — a branch-selector dropdown, a season multiselect, or an attendance-threshold slider — that reactively filters data or updates a chart, with the result displayed. Grading rewards the element (3), working reactive filtering (4), and a clear display (3). The widget pattern (create in one cell, read `.value` in another) is §17.4's closing example.
+**Bonus: Interactive marimo Element (10 points).** One marimo UI element — a branch-selector dropdown, a season multiselect, or an attendance-threshold slider — that reactively filters data or updates a chart, with the result displayed. Grading rewards the element (3), working reactive filtering (4), and a clear display (3). The widget pattern (create in one cell, read `.value` in another) is §17.4's closing example.
 
 Two standing rules from the assignment: use the underscore prefix for cell-scoped variables (loop variables, figures, temporaries) but *not* for variables returned from a cell, and put written responses inside `mo.md()` calls. Review this chapter's coffee-shop walkthrough as your worked model — then let the library data tell its own story.
 

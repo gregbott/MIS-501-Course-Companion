@@ -1141,7 +1141,7 @@ The static dashboard goes in the deck; the interactive versions answer the follo
 
     *Source: `computations/module11_examples.py` — `demo_capstone_interactive()`*
 
-!!! question "Try It Yourself — Capstone Challenge: Which Region Is Growing Faster?"
+!!! question "Try It Yourself: Capstone Challenge — Which Region Is Growing Faster?"
 
     Create your own 2-panel figure (1 row, 2 columns) that answers this business question: **"Which region is growing faster?"**
 

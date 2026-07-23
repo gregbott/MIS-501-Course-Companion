@@ -52,12 +52,12 @@ Status markers: `[ ]` pending · `[~]` in progress · `[x]` done · `[!]` blocke
 - [x] **Phase 3 — Verification harness.** Adapt BAN-501's `verify_all.py` (numeric-aware
   comparison of doc Output blocks vs. actual demo stdout, ADJUDICATED allowlist).
   Run, reconcile every mismatch, generate `CODE_EXAMPLE_MAPPING.md`.
-- [ ] **Phase 4 — Q&A reference.** `docs/reference/qa.md`: ~6–8 common student
+- [x] **Phase 4 — Q&A reference.** `docs/reference/qa.md`: ~6–8 common student
   questions per module, derived from the teaching notebooks, organized by module.
-- [ ] **Phase 5 — Review pass.** Cross-module consistency (skeleton, admonition shape,
+- [x] **Phase 5 — Review pass.** Cross-module consistency (skeleton, admonition shape,
   terminology), answer-leak audit of every Your Assignment section, link check,
   `mkdocs build --strict` clean.
-- [ ] **Phase 6 — Changelog & polish.** Finalize `CHANGELOG.md` v1.0.0, README polish.
+- [x] **Phase 6 — Changelog & polish.** Finalize `CHANGELOG.md` v1.0.0, README polish.
 - [ ] **Phase 7 — Publish.** Commit, push to main, enable GitHub Pages
   (Source: GitHub Actions), confirm live deploy, tag `v1.0.0`.
 
@@ -190,6 +190,14 @@ that file; agents report proposed entries instead of editing it.
 
 ## Findings & Decisions Log
 
+- **2026-07-24 (Phases 4–6):** Q&A reference authored (134 questions, 17 modules).
+  Review pass: structural consistency — zero blockers, 3 minor fixes applied (module 11
+  question-title form, lowercase marimo in modules 16/17); module 1's reflection-points
+  wording intentionally differs (its source assignment grades the reflection 10/100,
+  unlike modules 2–17 — source-faithful, kept). Answer-leak audit: all 17 chapters
+  CLEAN, all task/part point values match the assignment files exactly. CHANGELOG
+  v1.0.0 finalized. Source quirk worth fixing upstream: m01_assignment.py task points
+  sum to 90 (+10 bonus) though its header says Total 100.
 - **2026-07-23 (Phases 2–3):** All 17 modules authored by subagent fan-out (3 pilots,
   then batches of 7). 233 demo functions; verify suite fully clean (222 PASS, 11
   NO-NUMS qualitative, 0 FLAG/ERROR, empty ADJUDICATED — all prose-number flags were

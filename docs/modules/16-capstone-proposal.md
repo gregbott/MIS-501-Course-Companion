@@ -123,7 +123,7 @@ A project proposal is a short document (roughly one page) that tells the reader 
 
 **5. Methodology.** What analyses do you plan to perform? Which tools and techniques will you use? (e.g., "Group by region using Polars, compute summary statistics, visualize trends with Plotly Express.")
 
-**6. Expected Deliverables.** What will you produce? Typical deliverables include a Marimo notebook with analysis and visualizations, and a written executive summary of key findings and recommendations.
+**6. Expected Deliverables.** What will you produce? Typical deliverables include a marimo notebook with analysis and visualizations, and a written executive summary of key findings and recommendations.
 
 **7. Timeline.** Break the remaining two weeks into milestones — Week 1: data acquisition, cleaning, exploratory analysis; Week 2: focused analysis, visualization, write-up.
 
