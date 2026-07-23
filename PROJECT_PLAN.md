@@ -98,7 +98,7 @@ Commit at phase boundaries. Trailer: `Co-Authored-By: Claude Fable 5 <noreply@an
 
 ## Introduction            — 1 paragraph: why this module matters to business students
 ## Learning Objectives     — numbered list, bold action verbs; adapt from the teaching notebook
-## N.1 <Major Topic>       — 2–4 numbered H2 topic sections per module, following the
+## N.1 <Major Topic>       — 2–5 numbered H2 topic sections per module, following the
    ### <Sub-topic>           teaching notebook's own progression; H3/H4 for subdivisions
    ...                       each N.x section ends with a "### Common Misconceptions" table
 ## N.2 <Major Topic> ...     when the source material surfaces real beginner confusions
@@ -108,8 +108,9 @@ Commit at phase boundaries. Trailer: `Co-Authored-By: Claude Fable 5 <noreply@an
 ## What's Next             — short bridge to the next module (module 17: course wrap-up)
 ```
 
-Target length ≈ 600–1,000 lines. Pipe tables for comparisons/misconceptions. Math only
-where the source uses formulas (arithmetic, interest) — `$...$` / `$$...$$`.
+Target length ≈ 600–1,000 lines (up to ~1,250 where the source's demo volume demands
+it). Pipe tables for comparisons/misconceptions. Math only where the source uses
+formulas (arithmetic, interest) — `$...$` / `$$...$$`.
 
 ### Worked Example admonition (the verification unit)
 
@@ -136,6 +137,15 @@ Every substantive code demonstration from the teaching notebook becomes:
 4-space indent inside the admonition. Curation of Output (trimming long repetition) is
 allowed but every NUMBER shown must appear verbatim in the function's stdout —
 `verify_all.py` enforces exact match at displayed precision.
+
+VERIFIER SCOPE — the harness checks every number in the ENTIRE admonition body
+outside python/sql fences: the title, the Output block, AND the Interpretation
+prose (including inline backtick code). Only cite numbers that literally appear in
+the demo's stdout. If prose needs an input value ("the $10,000 principal…"), either
+have the demo print an input-recap line so the value is in stdout, or write the
+prose without digits ("the principal grows…"). Genuinely prose-derived arithmetic
+goes in `verify_all.py`'s ADJUDICATED allowlist — but only the orchestrator edits
+that file; agents report proposed entries instead of editing it.
 
 "Try It Yourself" prompts from the teaching notebook are preserved inline as
 `!!! question "Try It Yourself: <Topic>"` admonitions (prompt only, no solution).
