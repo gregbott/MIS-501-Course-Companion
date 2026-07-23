@@ -58,7 +58,7 @@ Status markers: `[ ]` pending · `[~]` in progress · `[x]` done · `[!]` blocke
   terminology), answer-leak audit of every Your Assignment section, link check,
   `mkdocs build --strict` clean.
 - [x] **Phase 6 — Changelog & polish.** Finalize `CHANGELOG.md` v1.0.0, README polish.
-- [ ] **Phase 7 — Publish.** Commit, push to main, enable GitHub Pages
+- [x] **Phase 7 — Publish.** Commit, push to main, enable GitHub Pages
   (Source: GitHub Actions), confirm live deploy, tag `v1.0.0`.
 
 Commit at phase boundaries. Trailer: `Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>`.
@@ -190,6 +190,10 @@ that file; agents report proposed entries instead of editing it.
 
 ## Findings & Decisions Log
 
+- **2026-07-24 (Phase 7):** Published. GitHub Pages enabled (Source: GitHub Actions)
+  BEFORE the first push, so the first deploy succeeded. Live at
+  https://gregbott.github.io/591-mis-501-course-companion/ (home + spot-checked module
+  pages return 200). Tagged v1.0.0.
 - **2026-07-24 (Phases 4–6):** Q&A reference authored (134 questions, 17 modules).
   Review pass: structural consistency — zero blockers, 3 minor fixes applied (module 11
   question-title form, lowercase marimo in modules 16/17); module 1's reflection-points
