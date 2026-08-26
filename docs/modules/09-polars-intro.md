@@ -968,7 +968,7 @@ The module's closing example combines everything: read the roster, summarize it,
 
 ## Your Assignment
 
-The Module 9 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Brightspace**. The final reflection section is not graded separately — it counts toward participation. Setup cells in the notebook create the CSV files the tasks read (under `/tmp/`), so you only write the analysis code. The tasks follow this module's sections in order and build toward a complete pipeline.
+The Module 9 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Blackboard**. The final reflection section is not graded separately — it counts toward participation. Setup cells in the notebook create the CSV files the tasks read (under `/tmp/`), so you only write the analysis code. The tasks follow this module's sections in order and build toward a complete pipeline.
 
 **Task 1: Creating and Inspecting DataFrames (10 points).** A retail chain tracks monthly performance across six stores. You build a DataFrame from a provided dictionary of store data, print its shape, columns, and schema, preview the first rows with `head()`, and produce summary statistics with `describe()`. Everything you need is in §9.1.
 

@@ -177,7 +177,7 @@ pixi run marimo edit m01_teaching.py
 
 The `pixi run` prefix runs marimo using the project's own environment — the one Pixi built from your recipe. Your browser opens the notebook; you edit and run cells there, and saving writes your changes back to the file.
 
-One practical detail worth noticing: a marimo notebook is stored as a plain Python `.py` file. That is the file you edit, the file you save, and — for assignments — the file you submit to Brightspace.
+One practical detail worth noticing: a marimo notebook is stored as a plain Python `.py` file. That is the file you edit, the file you save, and — for assignments — the file you submit to Blackboard.
 
 ### Common Misconceptions
 
@@ -185,7 +185,7 @@ One practical detail worth noticing: a marimo notebook is stored as a plain Pyth
 |---------------|---------|
 | You must run cells top to bottom, in order, yourself. | Marimo determines the right order from cell dependencies and runs them automatically — no "run all cells from the top" ritual. |
 | Output on screen might be stale, left over from an earlier run. | Reactive execution keeps every result in sync with the current code. The stale-output trap of traditional notebooks does not apply. |
-| A notebook is a special file you cannot open elsewhere. | A marimo notebook is a plain Python `.py` file — readable in any text editor and submitted directly to Brightspace. |
+| A notebook is a special file you cannot open elsewhere. | A marimo notebook is a plain Python `.py` file — readable in any text editor and submitted directly to Blackboard. |
 | Your spreadsheet experience does not transfer. | The reactive model is exactly how Excel behaves: change a cell, and everything that depends on it recalculates. If you understand that, you understand marimo's core idea. |
 
 ---
@@ -466,7 +466,7 @@ In this course, comments are how you explain your thinking and document your ana
 
 ## Your Assignment
 
-The Module 1 assignment, **First Steps with Python**, is worth **100 points plus a 10-point bonus**. You complete it in the provided marimo notebook and submit the `.py` file to Brightspace. The closing reflection accounts for 10 of the 100 points and is graded as participation-style credit — honest answers, not right-or-wrong ones. Read each task carefully, use comments to explain your thinking, and if you get stuck, return to the module sections referenced below.
+The Module 1 assignment, **First Steps with Python**, is worth **100 points plus a 10-point bonus**. You complete it in the provided marimo notebook and submit the `.py` file to Blackboard. The closing reflection accounts for 10 of the 100 points and is graded as participation-style credit — honest answers, not right-or-wrong ones. Read each task carefully, use comments to explain your thinking, and if you get stuck, return to the module sections referenced below.
 
 ### Task 1: Verify Your Environment (5 points)
 

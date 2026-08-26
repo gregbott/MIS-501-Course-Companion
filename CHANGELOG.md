@@ -9,6 +9,11 @@ project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+- Submission platform corrected from Brightspace to Blackboard throughout the
+  companion (20 references: the *Your Assignment* section of all 17 module
+  chapters, two further mentions in Module 1, and one in the Q&A Reference).
+  The course is delivered in Blackboard; the Brightspace wording was carried
+  over from an earlier delivery.
 - Repository renamed from `591-mis-501-course-companion` to
   `MIS-501-Course-Companion`. The site now lives at
   <https://gregbott.github.io/MIS-501-Course-Companion/>; the previous Pages URL

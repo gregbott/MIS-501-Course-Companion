@@ -966,7 +966,7 @@ The closing example uses everything from this module — string methods, regex g
 
 ## Your Assignment
 
-The Module 5 assignment, **Strings & Regular Expressions**, is worth **100 points plus a 10-point bonus**. You complete it in the provided marimo notebook and submit the `.py` file to Brightspace. The closing reflection section is not graded separately — it counts toward participation. Throughout the assignment: use raw strings (`r"..."`) for every regex pattern, use keyword arguments when calling functions with multiple parameters, and remember that string methods return new strings rather than modifying the original.
+The Module 5 assignment, **Strings & Regular Expressions**, is worth **100 points plus a 10-point bonus**. You complete it in the provided marimo notebook and submit the `.py` file to Blackboard. The closing reflection section is not graded separately — it counts toward participation. Throughout the assignment: use raw strings (`r"..."`) for every regex pattern, use keyword arguments when calling functions with multiple parameters, and remember that string methods return new strings rather than modifying the original.
 
 ### Task 1: String Slicing and Indexing (10 points)
 

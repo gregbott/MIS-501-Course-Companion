@@ -645,7 +645,7 @@ The closing example combines everything from this module — descriptive variabl
 
 ## Your Assignment
 
-The Module 2 assignment, **Data Type Exploration**, is worth **100 points plus a 10-point bonus**. You complete it in the provided marimo notebook and submit the `.py` file to Brightspace. The closing reflection section is not graded separately — it counts toward participation. Use descriptive `snake_case` names throughout, and verify your data types with `type()` when a task asks for it.
+The Module 2 assignment, **Data Type Exploration**, is worth **100 points plus a 10-point bonus**. You complete it in the provided marimo notebook and submit the `.py` file to Blackboard. The closing reflection section is not graded separately — it counts toward participation. Use descriptive `snake_case` names throughout, and verify your data types with `type()` when a task asks for it.
 
 ### Task 1: Building a Customer Record (10 points)
 

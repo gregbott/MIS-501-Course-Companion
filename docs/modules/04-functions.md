@@ -911,7 +911,7 @@ This is **modular thinking**: breaking a problem into small, self-contained piec
 
 ## Your Assignment
 
-The Module 4 assignment, **Functions and Modular Thinking**, is worth **100 points plus a 10-point bonus**. You complete it in the provided marimo notebook and submit the `.py` file to Brightspace. The closing reflection section is not graded separately — it counts toward participation. Throughout the assignment, remember the notebook's conventions: define functions with `def`, use `return` (not `print()`) to hand back values, prefix cell-scoped variables with an underscore, and use keyword arguments whenever a call has multiple parameters.
+The Module 4 assignment, **Functions and Modular Thinking**, is worth **100 points plus a 10-point bonus**. You complete it in the provided marimo notebook and submit the `.py` file to Blackboard. The closing reflection section is not graded separately — it counts toward participation. Throughout the assignment, remember the notebook's conventions: define functions with `def`, use `return` (not `print()`) to hand back values, prefix cell-scoped variables with an underscore, and use keyword arguments whenever a call has multiple parameters.
 
 ### Task 1: Your First Function (10 points)
 

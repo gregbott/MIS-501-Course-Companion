@@ -1143,7 +1143,7 @@ _dashboard
 
 ## Your Assignment
 
-The Module 12 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Brightspace**. The final reflection section is not graded separately — it counts toward participation. Setup cells in the notebook create every CSV file the tasks read (under `/tmp/`), so you only write the widget and analysis code. Two rules from the notebook's tips deserve repeating before you start: create and display each widget in one cell and read its `.value` in a separate cell, and keep the underscore prefix on cell-scoped temporary variables while widgets and DataFrames returned from a cell go unprefixed.
+The Module 12 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Blackboard**. The final reflection section is not graded separately — it counts toward participation. Setup cells in the notebook create every CSV file the tasks read (under `/tmp/`), so you only write the widget and analysis code. Two rules from the notebook's tips deserve repeating before you start: create and display each widget in one cell and read its `.value` in a separate cell, and keep the underscore prefix on cell-scoped temporary variables while widgets and DataFrames returned from a cell go unprefixed.
 
 **Task 1: Dropdown Selection (10 points).** A city library system tracks book checkouts by branch and genre. You build a dropdown of the sorted branch names (defaulting to the first), then in a second cell read its `.value`, filter to the selected branch, total its checkouts, and present the result with `mo.md()`. This is the two-cell dropdown pattern from the dropdown part of §12.2.
 

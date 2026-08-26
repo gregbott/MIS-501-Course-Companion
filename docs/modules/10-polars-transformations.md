@@ -966,7 +966,7 @@ The final stage produces the deliverable: a product performance report aggregate
 
 ## Your Assignment
 
-The Module 10 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Brightspace**. The final reflection section is not graded separately — it counts toward participation. Setup cells in the notebook create every CSV file the tasks read (under `/tmp/`), so you only write the analysis code. Work through the tasks in order; they follow the module's sections and build toward a full pipeline.
+The Module 10 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Blackboard**. The final reflection section is not graded separately — it counts toward participation. Setup cells in the notebook create every CSV file the tasks read (under `/tmp/`), so you only write the analysis code. Work through the tasks in order; they follow the module's sections and build toward a full pipeline.
 
 **Task 1: Adding Computed Columns (10 points).** An HR dataset holds six employees' annual salaries and years employed. You read the CSV and use `with_columns()` to add three derived columns — a monthly salary, a daily rate, and a seniority bonus — each computed from the existing columns with the rounding specified in the task. Everything you need is in §10.1.
 

@@ -1190,7 +1190,7 @@ Reflection is the final piece: what worked, what was hard, and what you would do
 
 ## Your Assignment
 
-The Module 17 assignment is the second half of your capstone: a complete analysis-and-presentation project worth **100 points plus a 10-point bonus**, built in a **marimo notebook (`.py` file)** and submitted to **Brightspace**. The closing reflection section is not graded separately — it counts toward participation.
+The Module 17 assignment is the second half of your capstone: a complete analysis-and-presentation project worth **100 points plus a 10-point bonus**, built in a **marimo notebook (`.py` file)** and submitted to **Blackboard**. The closing reflection section is not graded separately — it counts toward participation.
 
 The notebook supplies its own dataset: monthly activity records for a fictional **metropolitan public library system** — branches in different neighborhood settings, several program categories, and metrics for circulation (checkouts), program attendance, new card registrations, and patron satisfaction across a full year. A provided generation cell builds the data with a fixed random seed; the instructions say **do not modify it**, because the grading checks depend on the exact dataset. Your research question: *how do branch type, program category, and season affect circulation and program attendance?* — the same three-factor structure you just watched the coffee-shop example answer, transplanted to a new domain. This chapter deliberately demonstrated every technique on the coffee data so that you practice the method here and produce the library findings yourself.
 

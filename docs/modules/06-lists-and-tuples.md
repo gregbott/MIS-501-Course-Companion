@@ -974,7 +974,7 @@ The closing example combines lists, tuples, unpacking, functions, and comprehens
 
 ## Your Assignment
 
-The Module 6 assignment, **Lists & Tuples**, is worth **100 points plus a 10-point bonus**. You complete it in the provided marimo notebook and submit the `.py` file to Brightspace. The closing reflection section is not graded separately — it counts toward participation. Two habits from the notebook's tips will save you grief: list methods like `.append()` and `.sort()` modify the list in place and return `None` (never write `x = x.append(item)`), and `sorted()` is the tool when you need an ordered copy without changing the original.
+The Module 6 assignment, **Lists & Tuples**, is worth **100 points plus a 10-point bonus**. You complete it in the provided marimo notebook and submit the `.py` file to Blackboard. The closing reflection section is not graded separately — it counts toward participation. Two habits from the notebook's tips will save you grief: list methods like `.append()` and `.sort()` modify the list in place and return `None` (never write `x = x.append(item)`), and `sorted()` is the tool when you need an ordered copy without changing the original.
 
 ### Task 1: List Creation, Indexing, and Slicing (10 points)
 

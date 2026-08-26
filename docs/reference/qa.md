@@ -34,7 +34,7 @@ That file is the real payoff. It is a recipe card, not a program — it lists wh
 
 Marimo is reactive, the way a spreadsheet is: when you change a cell, every cell that depends on it reruns automatically. That has two practical consequences. First, you can never be looking at stale output left over from an earlier run — displayed results always match the current code. Second, you never have to remember to "run all cells from the top," because marimo works out the correct execution order from the dependencies between cells.
 
-One more practical detail: a marimo notebook is stored as a plain Python `.py` file. That is the file you edit, the file you save, and the file you submit to Brightspace for assignments — you can open it in any text editor.
+One more practical detail: a marimo notebook is stored as a plain Python `.py` file. That is the file you edit, the file you save, and the file you submit to Blackboard for assignments — you can open it in any text editor.
 
 ---
 

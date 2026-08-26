@@ -1346,7 +1346,7 @@ That is the full modern-analyst pipeline in miniature: **SQL for querying → Po
 
 ## Your Assignment
 
-The Module 13 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Brightspace**. The final reflection section is not graded separately — it counts toward participation. Setup cells create every CSV file the tasks use (under `/tmp/`) and register the multi-table datasets as DuckDB tables; do not modify those cells. Each task asks you to run SQL with `duckdb.sql()` and, where stated, convert the result to Polars with `.pl()`.
+The Module 13 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Blackboard**. The final reflection section is not graded separately — it counts toward participation. Setup cells create every CSV file the tasks use (under `/tmp/`) and register the multi-table datasets as DuckDB tables; do not modify those cells. Each task asks you to run SQL with `duckdb.sql()` and, where stated, convert the result to Polars with `.pl()`.
 
 **Task 1: Basic SELECT and WHERE (10 points).** A gym's membership roster lives in a CSV file. You query the file *directly* — no loading step — selecting the name, membership-type, and monthly-fee columns, filtering to members above the fee threshold given in the task, sorting by fee descending, and converting the result with `.pl()`. Direct file querying is §13.1; SELECT, WHERE, and ORDER BY are §13.2.
 

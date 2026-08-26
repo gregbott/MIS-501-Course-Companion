@@ -805,7 +805,7 @@ The order-processing report above used an accumulator (`grand_total`) and a coun
 
 ## Your Assignment
 
-The Module 3 assignment, **Decision Logic and Loops**, is worth **100 points plus a 10-point bonus**. You complete it in the provided marimo notebook and submit the `.py` file to Brightspace. The closing reflection section is not graded separately — it counts toward participation. Read each task carefully before writing code, pay close attention to indentation (it defines your code blocks), and use the underscore prefix (`_`) for variable names inside marimo cells. If you get stuck, return to the sections referenced below.
+The Module 3 assignment, **Decision Logic and Loops**, is worth **100 points plus a 10-point bonus**. You complete it in the provided marimo notebook and submit the `.py` file to Blackboard. The closing reflection section is not graded separately — it counts toward participation. Read each task carefully before writing code, pay close attention to indentation (it defines your code blocks), and use the underscore prefix (`_`) for variable names inside marimo cells. If you get stuck, return to the sections referenced below.
 
 ### Task 1: Grade Classification (10 points)
 

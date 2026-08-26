@@ -1409,7 +1409,7 @@ The capstone brings together everything from this module in a complete scraping-
 
 ## Your Assignment
 
-The Module 14 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Brightspace**. A final reflection section is not graded separately — it counts toward participation.
+The Module 14 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Blackboard**. A final reflection section is not graded separately — it counts toward participation.
 
 One design note: every task provides its web page **inline as an HTML string** in a setup cell (do not modify those cells), so you practice the full parsing toolkit without needing a network connection. In a real pipeline, `requests.get(url).text` would hand you the same strings. Parse with `BeautifulSoup(html_string, "html.parser")` throughout, and remember the underscore-prefix convention for cell-scoped variables.
 

@@ -1213,7 +1213,7 @@ The other three charts follow identically: average comment length per user (bar,
 
 ## Your Assignment
 
-The Module 15 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Brightspace**. A final reflection section is not graded separately — it counts toward participation.
+The Module 15 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Blackboard**. A final reflection section is not graded separately — it counts toward participation.
 
 One design note: every task provides its API data **inline as JSON strings** (parsed with `json.loads()`), so you practice the parsing, navigation, error-handling, and pipeline skills without needing a network connection. In a real pipeline, `requests.get(...).json()` would hand you the same structures.
 

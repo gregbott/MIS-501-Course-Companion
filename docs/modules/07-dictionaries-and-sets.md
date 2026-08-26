@@ -934,7 +934,7 @@ The capstone combines everything in this module — dictionary accumulators, `.g
 
 ## Your Assignment
 
-The Module 7 assignment, **Dictionaries & Sets**, is worth **100 points plus a 10-point bonus**. You complete it in the provided marimo notebook and submit the `.py` file to Brightspace. The closing reflection section is not graded separately — it counts toward participation. As in earlier assignments, keep the underscore prefix on cell-scoped variables, and remember two tips from this module while you work: `.get(key, default)` is the safe way to read keys that may be absent, and an empty set must be created with `set()`, never `{}`.
+The Module 7 assignment, **Dictionaries & Sets**, is worth **100 points plus a 10-point bonus**. You complete it in the provided marimo notebook and submit the `.py` file to Blackboard. The closing reflection section is not graded separately — it counts toward participation. As in earlier assignments, keep the underscore prefix on cell-scoped variables, and remember two tips from this module while you work: `.get(key, default)` is the safe way to read keys that may be absent, and an empty set must be created with `set()`, never `{}`.
 
 ### Task 1: Dictionary Creation and Access (10 points)
 

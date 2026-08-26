@@ -1165,7 +1165,7 @@ The static dashboard goes in the deck; the interactive versions answer the follo
 
 ## Your Assignment
 
-The Module 11 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Brightspace**. The final reflection section is not graded separately — it counts toward participation. Setup cells in the notebook create every CSV file the tasks read (under `/tmp/`), so you only write the analysis and charting code. Three module rules apply throughout: matplotlib needs Python lists (`.to_list()`), Plotly Express needs pandas DataFrames (`.to_pandas()`), and in every case you aggregate with Polars before plotting.
+The Module 11 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Blackboard**. The final reflection section is not graded separately — it counts toward participation. Setup cells in the notebook create every CSV file the tasks read (under `/tmp/`), so you only write the analysis and charting code. Three module rules apply throughout: matplotlib needs Python lists (`.to_list()`), Plotly Express needs pandas DataFrames (`.to_pandas()`), and in every case you aggregate with Polars before plotting.
 
 **Task 1: Simple Bar Chart (10 points).** A city parks department tracks average monthly visitors at its five community parks. You read the CSV and build a vertical matplotlib bar chart of visitors by park in a specified green color, with a title and both axis labels, finished with `plt.tight_layout()`. This is the §11.1 chart-building recipe applied with the §11.2 bar-chart pattern.
 

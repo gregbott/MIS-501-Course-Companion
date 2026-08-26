@@ -171,7 +171,7 @@ that file; agents report proposed entries instead of editing it.
 ### Your Assignment section rules (strict)
 
 - State: total points (100 + 10 bonus), format (marimo `.py` notebook), submission
-  (Brightspace), and that the reflection section is participation credit.
+  (Blackboard), and that the reflection section is participation credit.
 - Per task: task name, point value, a 2–3 sentence paraphrase of WHAT it asks, and
   which module sections (§N.x) supply the needed concepts.
 - NEVER: solution code, final answers, partial solution snippets, or reproduction of

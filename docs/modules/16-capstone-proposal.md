@@ -656,7 +656,7 @@ In Module 17, this analysis would continue with deeper dives: cross-tabulations 
 
 ## Your Assignment
 
-The Module 16 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Brightspace**. The final reflection section is not graded separately — it counts toward participation.
+The Module 16 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Blackboard**. The final reflection section is not graded separately — it counts toward participation.
 
 This is **not a typical coding-drill assignment**: it is the first half of your capstone, and most tasks ask you to write about *your own* project. So that you can complete the technical tasks even if you have not yet found your own data, the notebook provides a fictional hotel-reviews sample dataset (well above the size minimums) as a stand-in — you can swap in your real data later. The tasks follow this module's sections in order: question, source evaluation, acquisition, inspection, exploration, proposal.
 

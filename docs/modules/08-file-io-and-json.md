@@ -893,7 +893,7 @@ Everything in this module combines into the fundamental shape of data work — a
 
 ## Your Assignment
 
-The Module 8 assignment, **File I/O & Working with JSON**, is worth **100 points plus a 10-point bonus**. You complete it in the provided marimo notebook and submit the `.py` file to Brightspace. The closing reflection section is not graded separately — it counts toward participation. Two ground rules from the notebook's instructions: every file must be opened with a **context manager** (`with` statement), and file paths use the temp folder specified in the notebook so your code runs on any machine. Several tasks include a setup cell that creates the input file for you — run it, but do not modify it.
+The Module 8 assignment, **File I/O & Working with JSON**, is worth **100 points plus a 10-point bonus**. You complete it in the provided marimo notebook and submit the `.py` file to Blackboard. The closing reflection section is not graded separately — it counts toward participation. Two ground rules from the notebook's instructions: every file must be opened with a **context manager** (`with` statement), and file paths use the temp folder specified in the notebook so your code runs on any machine. Several tasks include a setup cell that creates the input file for you — run it, but do not modify it.
 
 ### Task 1: Reading a Text File (10 points)
 
