@@ -15,3 +15,6 @@ __marimo__/
 # Computation-verification artifacts (regenerable via `pixi run -e compute verify`)
 computations/_verify/
 computations/_scratch/
+
+# Blackboard guide PDF (regenerable via tools/make-blackboard-guide-pdf.sh)
+BLACKBOARD_GUIDE.pdf
