@@ -318,7 +318,7 @@ That is what `print()` is for. It writes text to the screen. Think of it as Pyth
 
     ```python
     # print() lets you display text and values
-    print("Hello, MIS 501!")
+    print("Hello, MIS501!")
 
     # You can print as many values as you want, each on its own line
     revenue = 450000
@@ -333,7 +333,7 @@ That is what `print()` is for. It writes text to the screen. Think of it as Pyth
     **Output:**
 
     ```
-    Hello, MIS 501!
+    Hello, MIS501!
     Revenue: 450000
     Costs: 320000
     Profit: 130000

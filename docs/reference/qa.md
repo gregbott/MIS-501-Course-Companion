@@ -1,6 +1,6 @@
-# MIS 501 Course Companion — Q&A Reference
+# MIS501 Course Companion — Q&A Reference
 
-This page collects the questions students most often ask while working through MIS 501, organized by module. Each answer summarizes what the corresponding chapter teaches, in plain language — use it as a quick reference alongside the full module pages.
+This page collects the questions students most often ask while working through MIS501, organized by module. Each answer summarizes what the corresponding chapter teaches, in plain language — use it as a quick reference alongside the full module pages.
 
 ---
 

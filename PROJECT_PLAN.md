@@ -1,7 +1,7 @@
-# MIS 501 Course Companion — Project Plan
+# MIS501 Course Companion — Project Plan
 
 This file is the living source of truth for building, verifying, and publishing the
-MIS 501 online course companion. Update the status markers and the Findings &
+MIS501 online course companion. Update the status markers and the Findings &
 Decisions Log at the end of every phase.
 
 Status markers: `[ ]` pending · `[~]` in progress · `[x]` done · `[!]` blocked/needs user
@@ -10,7 +10,7 @@ Status markers: `[ ]` pending · `[~]` in progress · `[x]` done · `[!]` blocke
 
 ## Context
 
-- **Course:** MIS 501: Application Development for the Data-Driven Organization —
+- **Course:** MIS501: Application Development for the Data-Driven Organization —
   a 17-module fully online Python course for MBA/graduate students with no prior
   programming experience. Progression: core Python (modules 1–8), data tooling with
   Polars/visualization/Marimo/DuckDB (9–13), data acquisition (14–15), capstone (16–17).
@@ -22,7 +22,7 @@ Status markers: `[ ]` pending · `[~]` in progress · `[x]` done · `[!]` blocke
   We replicate its **structure and process only** — MkDocs Material site, per-module docs,
   Q&A reference, computation-verification suite (`computations/` + `verify_all.py`),
   `CODE_EXAMPLE_MAPPING.md`, changelog, GitHub Pages deploy. BAN-501's ML content is NOT
-  ported; all content here derives from the MIS 501 teaching notebooks.
+  ported; all content here derives from the MIS501 teaching notebooks.
 - **This repo:** `gregbott/MIS-501-Course-Companion` (public; renamed from 591-mis-501-course-companion on 2026-07-24), site at
   `https://gregbott.github.io/MIS-501-Course-Companion/`.
 

@@ -659,7 +659,7 @@ Writing JSON files is how your analysis hands structured results to other progra
 
     report = {
         "report_name": "Q1 Sales Summary",
-        "generated_by": "MIS 501 Python Script",
+        "generated_by": "MIS501 Python Script",
         "months": monthly_sales,
         "totals": {
             "revenue": sum(m["revenue"] for m in monthly_sales),

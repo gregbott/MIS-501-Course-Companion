@@ -1,7 +1,7 @@
-# Linking the MIS 501 Course Companion into Blackboard
+# Linking the MIS501 Course Companion into Blackboard
 
 **Audience:** course creators and instructional designers building the Blackboard
-shell for MIS 501: Application Development for the Data-Driven Organization.
+shell for MIS501: Application Development for the Data-Driven Organization.
 
 **What you need from this document:** the companion is already published on the open
 web. You are not hosting it, copying it, or converting it. Your job is to point
@@ -12,7 +12,7 @@ plus the conventions to use them consistently.
 
 ## 1. What the companion is
 
-The MIS 501 Course Companion is a 17-chapter student-facing reference that parallels
+The MIS501 Course Companion is a 17-chapter student-facing reference that parallels
 the course's video lectures and marimo notebooks. Each chapter covers the same
 concepts as its module, with worked examples, common misconceptions, reflection
 questions, and a plain-language walkthrough of the module's graded assignment.
@@ -166,7 +166,7 @@ descriptive `title` attribute:
 ```html
 <iframe
   src="https://gregbott.github.io/MIS-501-Course-Companion/modules/03-control-flow/"
-  title="MIS 501 Course Companion — Module 3: Control Flow"
+  title="MIS501 Course Companion — Module 3: Control Flow"
   width="100%" height="800" style="border:1px solid #ccc;">
 </iframe>
 ```

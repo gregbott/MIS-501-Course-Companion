@@ -1,5 +1,5 @@
 """
-verify_all.py — computation verification for the MIS 501 course companion.
+verify_all.py — computation verification for the MIS501 course companion.
 
 Runs every ``demo_*`` function in the ``moduleNN_examples.py`` files, captures
 each function's stdout, and checks that the numbers presented in the companion

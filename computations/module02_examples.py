@@ -1,4 +1,4 @@
-"""Module 2 worked-example computations for the MIS 501 Course Companion.
+"""Module 2 worked-example computations for the MIS501 Course Companion.
 
 Every demo_*() function below reproduces exactly one Worked Example in
 docs/modules/02-variables-and-types.md. Run this script directly to print

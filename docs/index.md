@@ -1,12 +1,28 @@
-# MIS 501 Course Companion
+# MIS501 Course Companion
 
-Welcome to the course companion for **MIS 501: Application Development for the
+Welcome to the course companion for **MIS501: Application Development for the
 Data-Driven Organization**.
 
 This site parallels the course's video lectures and marimo notebooks. Each module has
 a companion chapter you can read before or after watching the lectures: the same
 concepts, worked examples with real output, common misconceptions, reflection
 questions, and an overview of the module's graded assignment.
+
+---
+
+## Course Objectives
+
+By the end of MIS501, you will be able to:
+
+1. **Write well-structured Python programs** — use variables, control flow, functions,
+   and core data structures to express business logic in clear, reusable code.
+2. **Acquire data from real-world sources** — read and write files and JSON, parse
+   text with regular expressions, scrape web pages, and consume REST APIs.
+3. **Transform and analyze data at scale** — clean, reshape, and aggregate data with
+   Polars and query it with SQL in DuckDB.
+4. **Communicate data-driven insights** — build presentation-quality visualizations
+   and interactive marimo notebooks, and deliver a complete analytical project that
+   answers a business question with a defensible, clearly written narrative.
 
 ---
 

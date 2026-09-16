@@ -2,7 +2,7 @@
 Module 15: REST APIs & Data Acquisition - Worked Example Computations
 
 This script reproduces every worked-example output in the Module 15 chapter
-of the MIS 501 Course Companion. Run with:
+of the MIS501 Course Companion. Run with:
 
     pixi run -e compute python computations/module15_examples.py
 

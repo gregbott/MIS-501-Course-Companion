@@ -1,7 +1,7 @@
 [workspace]
 name = "mis501-course-companion"
 version = "1.0.0"
-description = "MIS 501: Application Development for the Data-Driven Organization — Online Course Companion (MkDocs site + computation-verification suite)"
+description = "MIS501: Application Development for the Data-Driven Organization — Online Course Companion (MkDocs site + computation-verification suite)"
 authors = ["Gregory Bott <gregbott@gmail.com>"]
 channels = ["conda-forge"]
 platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]

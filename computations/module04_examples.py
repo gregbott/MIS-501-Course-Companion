@@ -1,4 +1,4 @@
-"""Module 4 worked-example computations for the MIS 501 Course Companion.
+"""Module 4 worked-example computations for the MIS501 Course Companion.
 
 Every demo_*() function below reproduces exactly one Worked Example in
 docs/modules/04-functions.md. Run this script directly to print each
@@ -68,7 +68,7 @@ def demo_define_and_call():
     """Defining a function registers it; calling it runs the body."""
     # A simple function that greets someone by name
     def greet(name):
-        return f"Hello, {name}! Welcome to MIS 501."
+        return f"Hello, {name}! Welcome to MIS501."
 
     # Nothing happens until we CALL the function
     message = greet("Alice")

@@ -1,7 +1,7 @@
 """Module 16 computation examples: Capstone — Proposal & Data Acquisition.
 
 Every demo function below backs one Worked Example in the Module 16 chapter of
-the MIS 501 Course Companion. The chapter pastes each function's stdout
+the MIS501 Course Companion. The chapter pastes each function's stdout
 verbatim, so do not edit outputs by hand — rerun this script instead.
 
 References in Course Companion:

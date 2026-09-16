@@ -1,4 +1,4 @@
-"""Module 1 worked-example computations for the MIS 501 Course Companion.
+"""Module 1 worked-example computations for the MIS501 Course Companion.
 
 Every demo_*() function below reproduces exactly one Worked Example in
 docs/modules/01-why-python-and-setup.md. Run this script directly to print
@@ -52,7 +52,7 @@ def demo_profit_margin():
 def demo_print_basics():
     """print() displays text and as many labeled values as you want."""
     # print() lets you display text and values
-    print("Hello, MIS 501!")
+    print("Hello, MIS501!")
 
     # You can print as many values as you want, each on its own line
     revenue = 450000

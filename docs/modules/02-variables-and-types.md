@@ -122,7 +122,7 @@ Python has four fundamental types you will use constantly:
 |------|------|----------|----------|
 | `int` | Integer | `42`, `-7`, `0` | Counts, quantities, IDs |
 | `float` | Floating-point | `3.14`, `-0.5`, `100.0` | Prices, percentages, measurements |
-| `str` | String | `"hello"`, `'MIS 501'` | Names, labels, text data |
+| `str` | String | `"hello"`, `'MIS501'` | Names, labels, text data |
 | `bool` | Boolean | `True`, `False` | Yes/no decisions, filters |
 
 ### Integers and Floats

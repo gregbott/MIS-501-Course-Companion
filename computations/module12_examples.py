@@ -1,7 +1,7 @@
 """Module 12 computation examples: Marimo Interactive Features.
 
 Every demo function below backs one Worked Example in the Module 12 chapter of
-the MIS 501 Course Companion. The chapter pastes each function's stdout
+the MIS501 Course Companion. The chapter pastes each function's stdout
 verbatim, so do not edit outputs by hand — rerun this script instead.
 
 Module 12 teaches marimo UI widgets (dropdown, slider, text, checkbox, table,

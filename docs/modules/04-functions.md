@@ -119,7 +119,7 @@ The pieces:
     ```python
     # A simple function that greets someone by name
     def greet(name):
-        return f"Hello, {name}! Welcome to MIS 501."
+        return f"Hello, {name}! Welcome to MIS501."
 
     # Nothing happens until we CALL the function
     message = greet("Alice")
@@ -129,7 +129,7 @@ The pieces:
     **Output:**
 
     ```
-    Hello, Alice! Welcome to MIS 501.
+    Hello, Alice! Welcome to MIS501.
     ```
 
     **Interpretation:** Two distinct things happen here. **Defining** the function registers it for later use but runs nothing — the body sits and waits. **Calling** it with an argument is what actually runs the body, builds the greeting, and returns it to the caller, where it is stored in `message` and printed.

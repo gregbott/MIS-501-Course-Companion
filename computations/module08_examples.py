@@ -1,4 +1,4 @@
-"""Module 8 worked-example computations for the MIS 501 Course Companion.
+"""Module 8 worked-example computations for the MIS501 Course Companion.
 
 Every demo_*() function below reproduces exactly one Worked Example in
 docs/modules/08-file-io-and-json.md. Run this script directly to print
@@ -372,7 +372,7 @@ def demo_write_json_report():
 
     report = {
         "report_name": "Q1 Sales Summary",
-        "generated_by": "MIS 501 Python Script",
+        "generated_by": "MIS501 Python Script",
         "months": monthly_sales,
         "totals": {
             "revenue": sum(m["revenue"] for m in monthly_sales),
