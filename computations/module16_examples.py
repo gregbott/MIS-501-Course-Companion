@@ -21,6 +21,7 @@ Deterministic — no network access. Nothing is written to disk.
 Last updated: 2026-07-23
 """
 
+import datetime
 import random
 
 import polars as pl
@@ -98,8 +99,16 @@ def make_bike_data():
                 season_base + hour_effect + weather_effect + weekend_effect + noise,
             )
 
+            # Pick a day of the month, then move it forward to the first date
+            # that falls on the chosen weekday (back a week instead if that
+            # would pass the 28th), so date and day_of_week agree. The random calls are unchanged in number and
+            # order, so every other value matches the original dataset.
+            dom = random.randint(1, 28)
+            shift = (days_of_week.index(day) - datetime.date(2025, month, dom).weekday()) % 7
+            dom = dom + shift if dom + shift <= 28 else dom + shift - 7
+
             rows.append({
-                "date": f"2025-{month:02d}-{random.randint(1, 28):02d}",
+                "date": f"2025-{month:02d}-{dom:02d}",
                 "hour": hour,
                 "day_of_week": day,
                 "season": season,

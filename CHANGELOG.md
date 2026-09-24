@@ -9,6 +9,16 @@ project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+- Module 16.1 bike-sharing walkthrough: `day_of_week` was drawn at random,
+  independently of `date`, so the two disagreed in 171 of 204 rows (the first
+  row showed 2025-01-15 as a Saturday). Each date now moves forward to the first
+  day matching its weekday (back a week if that would pass the 28th), staying
+  within its month. The random calls are unchanged, so
+  every other value and every number in the chapter is the same; only the dates
+  in the displayed first ten rows changed. The chapter's code listing also drew
+  its random values in a different order from `computations/module16_examples.py`
+  and the notebook, so running it gave different data from the output shown; it
+  now matches and reproduces the displayed output exactly.
 - The companion now matches the course's 16-module structure. The two capstone
   chapters are Module 16.1 (Proposal & Data Acquisition) and Module 16.2
   (Analysis & Presentation), matching Blackboard, instead of Modules 16 and 17.

@@ -180,6 +180,7 @@ In a real project this step would be `pl.read_csv()` on a downloaded file, an AP
 !!! example "Worked Example: Acquiring the Data — Generate, Load, and Check the Shape"
 
     ```python
+    import datetime
     import random
     import polars as pl
 
@@ -208,6 +209,8 @@ In a real project this step would be `pl.read_csv()` on a downloaded file, an AP
             hour = random.choice(hours)
             day = random.choice(days_of_week)
             weather = random.choice(weather_options)
+            station = random.choice(stations)
+            member = random.choice(["casual", "annual"])
 
             # Temperature drawn from a season-appropriate range (Celsius)
             temp = {
@@ -216,6 +219,7 @@ In a real project this step would be `pl.read_csv()` on a downloaded file, an AP
                 "Summer": random.randint(22, 35),
                 "Fall": random.randint(5, 18),
             }[season]
+            humidity = random.randint(30, 95)
 
             # Ridership model: base + hour effect + weather effect + noise
             hour_effect = {7: 30, 8: 70, 9: 40, 12: 25, 13: 20,
@@ -227,16 +231,23 @@ In a real project this step would be `pl.read_csv()` on a downloaded file, an AP
             count = max(5, season_base + hour_effect + weather_effect
                         + weekend_effect + noise)
 
+            # Pick a day of the month, then move it forward to the first
+            # date on the chosen weekday (back a week if past the 28th)
+            dom = random.randint(1, 28)
+            shift = (days_of_week.index(day)
+                     - datetime.date(2025, month, dom).weekday()) % 7
+            dom = dom + shift if dom + shift <= 28 else dom + shift - 7
+
             rows.append({
-                "date": f"2025-{month:02d}-{random.randint(1, 28):02d}",
+                "date": f"2025-{month:02d}-{dom:02d}",
                 "hour": hour,
                 "day_of_week": day,
                 "season": season,
                 "temperature_c": temp,
-                "humidity_pct": random.randint(30, 95),
+                "humidity_pct": humidity,
                 "weather": weather,
-                "station": random.choice(stations),
-                "member_type": random.choice(["casual", "annual"]),
+                "station": station,
+                "member_type": member,
                 "ridership_count": count,
             })
 
@@ -261,21 +272,21 @@ In a real project this step would be `pl.read_csv()` on a downloaded file, an AP
     │ date       ┆ i64  ┆ str         ┆ str    ┆   ┆ str     ┆ str         ┆ str         ┆ ---         │
     │            ┆      ┆             ┆        ┆   ┆         ┆             ┆             ┆ i64         │
     ╞════════════╪══════╪═════════════╪════════╪═══╪═════════╪═════════════╪═════════════╪═════════════╡
-    │ 2025-01-15 ┆ 13   ┆ Saturday    ┆ Winter ┆ … ┆ Rainy   ┆ Union       ┆ annual      ┆ 67          │
+    │ 2025-01-18 ┆ 13   ┆ Saturday    ┆ Winter ┆ … ┆ Rainy   ┆ Union       ┆ annual      ┆ 67          │
     │            ┆      ┆             ┆        ┆   ┆         ┆ Station     ┆             ┆             │
-    │ 2025-01-05 ┆ 19   ┆ Monday      ┆ Winter ┆ … ┆ Rainy   ┆ Market      ┆ casual      ┆ 69          │
+    │ 2025-01-06 ┆ 19   ┆ Monday      ┆ Winter ┆ … ┆ Rainy   ┆ Market      ┆ casual      ┆ 69          │
     │            ┆      ┆             ┆        ┆   ┆         ┆ Square      ┆             ┆             │
     │ 2025-01-16 ┆ 12   ┆ Thursday    ┆ Winter ┆ … ┆ Rainy   ┆ Riverside   ┆ casual      ┆ 44          │
-    │ 2025-01-13 ┆ 13   ┆ Tuesday     ┆ Winter ┆ … ┆ Sunny   ┆ Union       ┆ casual      ┆ 126         │
+    │ 2025-01-14 ┆ 13   ┆ Tuesday     ┆ Winter ┆ … ┆ Sunny   ┆ Union       ┆ casual      ┆ 126         │
     │            ┆      ┆             ┆        ┆   ┆         ┆ Station     ┆             ┆             │
-    │ 2025-01-13 ┆ 8    ┆ Friday      ┆ Winter ┆ … ┆ Snowy   ┆ Market      ┆ casual      ┆ 86          │
+    │ 2025-01-17 ┆ 8    ┆ Friday      ┆ Winter ┆ … ┆ Snowy   ┆ Market      ┆ casual      ┆ 86          │
     │            ┆      ┆             ┆        ┆   ┆         ┆ Square      ┆             ┆             │
-    │ 2025-01-09 ┆ 18   ┆ Saturday    ┆ Winter ┆ … ┆ Snowy   ┆ Riverside   ┆ casual      ┆ 86          │
-    │ 2025-01-03 ┆ 7    ┆ Monday      ┆ Winter ┆ … ┆ Rainy   ┆ Market      ┆ annual      ┆ 66          │
+    │ 2025-01-11 ┆ 18   ┆ Saturday    ┆ Winter ┆ … ┆ Snowy   ┆ Riverside   ┆ casual      ┆ 86          │
+    │ 2025-01-06 ┆ 7    ┆ Monday      ┆ Winter ┆ … ┆ Rainy   ┆ Market      ┆ annual      ┆ 66          │
     │            ┆      ┆             ┆        ┆   ┆         ┆ Square      ┆             ┆             │
     │ 2025-01-01 ┆ 21   ┆ Wednesday   ┆ Winter ┆ … ┆ Sunny   ┆ Riverside   ┆ casual      ┆ 97          │
-    │ 2025-01-02 ┆ 9    ┆ Friday      ┆ Winter ┆ … ┆ Rainy   ┆ Riverside   ┆ annual      ┆ 58          │
-    │ 2025-01-23 ┆ 21   ┆ Friday      ┆ Winter ┆ … ┆ Cloudy  ┆ Riverside   ┆ casual      ┆ 99          │
+    │ 2025-01-03 ┆ 9    ┆ Friday      ┆ Winter ┆ … ┆ Rainy   ┆ Riverside   ┆ annual      ┆ 58          │
+    │ 2025-01-24 ┆ 21   ┆ Friday      ┆ Winter ┆ … ┆ Cloudy  ┆ Riverside   ┆ casual      ┆ 99          │
     └────────────┴──────┴─────────────┴────────┴───┴─────────┴─────────────┴─────────────┴─────────────┘
     ```
 
