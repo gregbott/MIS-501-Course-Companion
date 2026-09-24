@@ -1,8 +1,8 @@
-# Module 17: Capstone: Analysis & Presentation
+# Module 16.2: Capstone: Analysis & Presentation
 
 ## Introduction
 
-This is the final module of MIS501, and it completes the capstone project you began in Module 16. There you framed a research question, proposed a data source, and ran a first exploratory analysis. Here you carry a project through every remaining step: cleaning and feature engineering, systematic Polars aggregation, SQL analysis with DuckDB, presentation-quality visualizations, and — the part decision-makers actually read — a written narrative with an executive summary, honest limitations, and a reflection. The whole module is a complete worked example of a finished capstone, demonstrated on a fictional coffee-shop chain. Your graded assignment applies the identical workflow to a different business — a metropolitan public library system — so this chapter teaches you the *method* while your assignment produces the *answers*. That separation is deliberate: the analytical workflow is the same regardless of the subject matter, and being able to move it from one domain to another is precisely the skill a capstone certifies.
+This is the second half of the final module of MIS501, and it completes the capstone project you began in Module 16.1. There you framed a research question, proposed a data source, and ran a first exploratory analysis. Here you carry a project through every remaining step: cleaning and feature engineering, systematic Polars aggregation, SQL analysis with DuckDB, presentation-quality visualizations, and — the part decision-makers actually read — a written narrative with an executive summary, honest limitations, and a reflection. The whole module is a complete worked example of a finished capstone, demonstrated on a fictional coffee-shop chain. Your graded assignment applies the identical workflow to a different business — a metropolitan public library system — so this chapter teaches you the *method* while your assignment produces the *answers*. That separation is deliberate: the analytical workflow is the same regardless of the subject matter, and being able to move it from one domain to another is precisely the skill a capstone certifies.
 
 ---
 
@@ -19,7 +19,7 @@ By the end of this module, you should be able to:
 
 ---
 
-## 17.1 The Capstone Workflow: From Raw Data to Deliverable
+## 16.2.1 The Capstone Workflow: From Raw Data to Deliverable
 
 A finished capstone is not a pile of code cells — it is a structured document that walks a reader from a question to a defensible answer. Every step includes narrative *before* the code (what we are about to do and why) and *after* the code (what the results mean). That narrative thread is what separates a polished analysis from a collection of scripts.
 
@@ -47,7 +47,7 @@ The question has three independent variables (location, product, day) and two de
 
 **The business context.** "Brewed Awakening" is a fictional coffee shop chain with five locations in different settings — downtown, near a university, inside an airport terminal, in a suburban strip mall, and in a shopping mall. Management wants to know which locations and products drive revenue, how traffic shifts across the week, and whether promotional campaigns work. The answers would inform staffing, inventory, and marketing decisions.
 
-Note that this demonstration deliberately uses a *different* dataset from your Module 17 assignment (which analyzes a public library system). You practice every technique here on the coffee data; the assignment then asks you to transfer those techniques, not to copy results.
+Note that this demonstration deliberately uses a *different* dataset from your Module 16.2 assignment (which analyzes a public library system). You practice every technique here on the coffee data; the assignment then asks you to transfer those techniques, not to copy results.
 
 ### Step 1: Data Acquisition
 
@@ -293,7 +293,7 @@ The threshold comes from `.select(...).item()`: `select` returns a one-row, one-
 
 ---
 
-## 17.2 Analysis with Polars
+## 16.2.2 Analysis with Polars
 
 This is the core of the capstone: answering the research question through systematic aggregation. The pattern is always the one from Module 10 — `group_by().agg()`, then sort, then round for presentation — but the *choice of grouping* is what turns mechanics into insight. Five analyses each address a different facet of the question.
 
@@ -460,7 +460,7 @@ Do weekend patterns differ by location type? Business intuition says Downtown sh
 
 ### Analysis 4: The Promotional Effect
 
-Do promotional days generate meaningfully higher revenue? Grouping by the `promo_active` flag splits the whole dataset into two pools; a second grouping by store checks whether the effect is uniform. (The per-store table also feeds Chart 6 in §17.4.)
+Do promotional days generate meaningfully higher revenue? Grouping by the `promo_active` flag splits the whole dataset into two pools; a second grouping by store checks whether the effect is uniform. (The per-store table also feeds Chart 6 in §16.2.4.)
 
 !!! example "Worked Example: Promo Days vs. Regular Days"
 
@@ -618,7 +618,7 @@ The most actionable conclusion is that **location-specific strategies** (staffin
 
 ---
 
-## 17.3 Analysis with DuckDB
+## 16.2.3 Analysis with DuckDB
 
 DuckDB (Module 13) lets you write SQL directly against a Polars DataFrame — `duckdb.register()` makes the DataFrame visible to SQL under a table name, and `.pl()` converts each result back to Polars so the workflow stays consistent. Nothing here *requires* SQL; the point is tool choice. Cross-tabulations and window functions often read more naturally in SQL, while method-chaining transformations are often cleaner in Polars.
 
@@ -807,7 +807,7 @@ To prove Polars and DuckDB agree, here is the store revenue summary from Analysi
 
 ---
 
-## 17.4 Visualizations and Interactive Elements
+## 16.2.4 Visualizations and Interactive Elements
 
 Visualizations translate numbers into patterns an audience can absorb quickly. A good capstone includes four to six charts, each with a clear title, labeled axes, and a written interpretation — a chart without a sentence underneath is a puzzle, not a finding. The examples use Plotly Express; `.to_pandas()` converts each Polars DataFrame on the way in, matching the convention from Module 11. Because charts render as figures rather than text, the worked examples in this section verify the *numbers behind* the charts; the chart code itself is shown for each.
 
@@ -830,7 +830,7 @@ fig.update_layout(showlegend=False, template="plotly_white",
 fig
 ```
 
-The bar chart makes the ranking from §17.2 Analysis 1 legible in one glance: Airport first, then Mall and University, with Downtown and Suburban nearly tied. Just as important is what the *scale* shows — the gap between the tallest and shortest bars is modest, not a runaway lead, so location is a smaller lever than the product mix, and the per-visitor efficiency ranking runs in nearly the opposite order.
+The bar chart makes the ranking from §16.2.2 Analysis 1 legible in one glance: Airport first, then Mall and University, with Downtown and Suburban nearly tied. Just as important is what the *scale* shows — the gap between the tallest and shortest bars is modest, not a runaway lead, so location is a smaller lever than the product mix, and the per-visitor efficiency ranking runs in nearly the opposite order.
 
 ### Chart 2: Revenue by Product Category Across Stores
 
@@ -851,7 +851,7 @@ fig.update_layout(template="plotly_white", xaxis_categoryorder="total descending
 fig
 ```
 
-Built on the §17.3 cross-tabulation, the grouped bars show Coffee dominating at every location while the *secondary* products vary: the Airport's Coffee bar towers over its neighbors (travelers grabbing a quick cup), University shows relatively stronger Smoothie performance, and Mall a notable Pastry component. The chart argues visually for location-specific inventory allocation.
+Built on the §16.2.3 cross-tabulation, the grouped bars show Coffee dominating at every location while the *secondary* products vary: the Airport's Coffee bar towers over its neighbors (travelers grabbing a quick cup), University shows relatively stronger Smoothie performance, and Mall a notable Pastry component. The chart argues visually for location-specific inventory allocation.
 
 ### Chart 3: Daily Revenue Trend with Rolling Average
 
@@ -872,7 +872,7 @@ fig.update_layout(template="plotly_white")
 fig
 ```
 
-Filtering the §17.3 rolling-average table to one store keeps the trend line clean. The solid line (rolling average) drifts gently while the faint dots (daily values) scatter around it — the smoothing hides promo-day spikes and random noise so that any *sustained* upward or downward slope would stand out. In this quarter the Downtown line is essentially flat: stable demand, no seasonal drift.
+Filtering the §16.2.3 rolling-average table to one store keeps the trend line clean. The solid line (rolling average) drifts gently while the faint dots (daily values) scatter around it — the smoothing hides promo-day spikes and random noise so that any *sustained* upward or downward slope would stand out. In this quarter the Downtown line is essentially flat: stable demand, no seasonal drift.
 
 ### Chart 4: Customer Traffic vs. Daily Revenue
 
@@ -947,7 +947,7 @@ fig.update_layout(template="plotly_white", xaxis_categoryorder="total descending
 fig
 ```
 
-Paired bars per store make the §17.2 Analysis 3 pattern visible at a glance: Downtown's weekend bar drops well below its weekday bar, Mall's does the reverse, and Airport's pair is nearly even. Because revenue per product-day barely moves across these swings, the actionable signal is staffing — reduce Downtown's Saturday crew, plan for Mall's weekend peak.
+Paired bars per store make the §16.2.2 Analysis 3 pattern visible at a glance: Downtown's weekend bar drops well below its weekday bar, Mall's does the reverse, and Airport's pair is nearly even. Because revenue per product-day barely moves across these swings, the actionable signal is staffing — reduce Downtown's Saturday crew, plan for Mall's weekend peak.
 
 ### Chart 6: Promotional Impact by Store
 
@@ -969,7 +969,7 @@ fig.update_layout(template="plotly_white", xaxis_categoryorder="total descending
 fig
 ```
 
-Using the per-store promo table from §17.2 Analysis 4, every store shows a green (Promo) bar above its red (No Promo) bar by a similar proportion — visual evidence that the promotion mechanism works uniformly rather than benefiting only certain locations. The honest caption writes itself: promotions lift revenue everywhere; whether they lift *profit* requires cost data we do not have.
+Using the per-store promo table from §16.2.2 Analysis 4, every store shows a green (Promo) bar above its red (No Promo) bar by a similar proportion — visual evidence that the promotion mechanism works uniformly rather than benefiting only certain locations. The honest caption writes itself: promotions lift revenue everywhere; whether they lift *profit* requires cost data we do not have.
 
 ### Interactive Exploration with Marimo Widgets
 
@@ -1075,7 +1075,7 @@ Because a course companion page cannot host a live widget, the worked example be
 
 ---
 
-## 17.5 Communicating Results
+## 16.2.5 Communicating Results
 
 Analysis that never becomes a decision is a hobby. The last three steps of the capstone — executive summary, limitations, reflection — are pure writing, and they are weighted heavily in your assignment precisely because they are what separates an analyst from a script.
 
@@ -1190,23 +1190,23 @@ Reflection is the final piece: what worked, what was hard, and what you would do
 
 ## Your Assignment
 
-The Module 17 assignment is the second half of your capstone: a complete analysis-and-presentation project worth **100 points plus a 10-point bonus**, built in a **marimo notebook (`.py` file)** and submitted to **Blackboard**. The closing reflection section is not graded separately — it counts toward participation.
+The Module 16.2 assignment is the second half of your capstone: a complete analysis-and-presentation project worth **100 points plus a 10-point bonus**, built in a **marimo notebook (`.py` file)** and submitted to **Blackboard**. The closing reflection section is not graded separately — it counts toward participation.
 
 The notebook supplies its own dataset: monthly activity records for a fictional **metropolitan public library system** — branches in different neighborhood settings, several program categories, and metrics for circulation (checkouts), program attendance, new card registrations, and patron satisfaction across a full year. A provided generation cell builds the data with a fixed random seed; the instructions say **do not modify it**, because the grading checks depend on the exact dataset. Your research question: *how do branch type, program category, and season affect circulation and program attendance?* — the same three-factor structure you just watched the coffee-shop example answer, transplanted to a new domain. This chapter deliberately demonstrated every technique on the coffee data so that you practice the method here and produce the library findings yourself.
 
-**Task 1: Data Cleaning and Preparation (15 points).** Starting from the raw DataFrame, you fill the nulls that the satisfaction column contains with its median, engineer a normalized attendance-per-checkout column (a ratio scaled and rounded as specified), and create a boolean flag marking rows whose attendance exceeds the overall median — then print the null count and the resulting shape and display the head. This is the §17.1 Step 3 workflow exactly: `median()` + `fill_null()` from Module 10, plus the two engineered-column patterns (`with_columns()`, ratio column, threshold flag). Grading rewards the null fill (5), the ratio column (5), the flag (3), and the printed output (2).
+**Task 1: Data Cleaning and Preparation (15 points).** Starting from the raw DataFrame, you fill the nulls that the satisfaction column contains with its median, engineer a normalized attendance-per-checkout column (a ratio scaled and rounded as specified), and create a boolean flag marking rows whose attendance exceeds the overall median — then print the null count and the resulting shape and display the head. This is the §16.2.1 Step 3 workflow exactly: `median()` + `fill_null()` from Module 10, plus the two engineered-column patterns (`with_columns()`, ratio column, threshold flag). Grading rewards the null fill (5), the ratio column (5), the flag (3), and the printed output (2).
 
-**Task 2: Polars Group-By Analysis (15 points, 5 per summary).** Three aggregations, each assigned to a named variable: a branch performance summary, a program popularity summary, and a seasonal pattern summary, each with specified aggregation columns, rounding, and sort order. One wrinkle deserves care: like `customer_count` in the coffee data, the library's branch-level checkout totals repeat across the program rows of a branch-month, so the branch summary requires the deduplication adjustment the task text describes before summing. Everything here is §17.2 — including the warning in its Common Misconceptions table about summing a repeated column.
+**Task 2: Polars Group-By Analysis (15 points, 5 per summary).** Three aggregations, each assigned to a named variable: a branch performance summary, a program popularity summary, and a seasonal pattern summary, each with specified aggregation columns, rounding, and sort order. One wrinkle deserves care: like `customer_count` in the coffee data, the library's branch-level checkout totals repeat across the program rows of a branch-month, so the branch summary requires the deduplication adjustment the task text describes before summing. Everything here is §16.2.2 — including the warning in its Common Misconceptions table about summing a repeated column.
 
-**Task 3: DuckDB SQL Queries (20 points).** Three queries against the cleaned DataFrame, each ending in `.pl()`: **3A (7 points)** ranks branch-program combinations by total attendance with a grouped, ordered, limited query; **3B (7 points)** builds a CTE of monthly branch totals and then applies a **window function** — a running `SUM(...) OVER (PARTITION BY ... ORDER BY ...)` — to produce cumulative checkouts over the year, the same CTE-plus-window pattern as §17.3's rolling average (a running total simply uses a different window frame); **3C (6 points)** compares branch types on average attendance, average satisfaction, and a distinct-count of branches. §17.3 covers all three shapes.
+**Task 3: DuckDB SQL Queries (20 points).** Three queries against the cleaned DataFrame, each ending in `.pl()`: **3A (7 points)** ranks branch-program combinations by total attendance with a grouped, ordered, limited query; **3B (7 points)** builds a CTE of monthly branch totals and then applies a **window function** — a running `SUM(...) OVER (PARTITION BY ... ORDER BY ...)` — to produce cumulative checkouts over the year, the same CTE-plus-window pattern as §16.2.3's rolling average (a running total simply uses a different window frame); **3C (6 points)** compares branch types on average attendance, average satisfaction, and a distinct-count of branches. §16.2.3 covers all three shapes.
 
-**Task 4: Visualizations (15 points, 5 per chart).** Three polished Plotly Express charts, each with a descriptive title, labeled axes via the `labels` parameter, appropriate colors, and the `plotly_white` template (remember `.to_pandas()`): a **horizontal bar chart** of attendance by branch, a **grouped bar chart** of average attendance by season and program (which needs one more group-by you write yourself), and a **line chart** of the cumulative checkouts from Task 3B. The chart grammar — bar orientation, `barmode="group"`, color mapping, layout templates — is demonstrated across §17.4's six charts.
+**Task 4: Visualizations (15 points, 5 per chart).** Three polished Plotly Express charts, each with a descriptive title, labeled axes via the `labels` parameter, appropriate colors, and the `plotly_white` template (remember `.to_pandas()`): a **horizontal bar chart** of attendance by branch, a **grouped bar chart** of average attendance by season and program (which needs one more group-by you write yourself), and a **line chart** of the cumulative checkouts from Task 3B. The chart grammar — bar orientation, `barmode="group"`, color mapping, layout templates — is demonstrated across §16.2.4's six charts.
 
-**Task 5: Data Narrative (20 points, 5 per section).** A structured findings summary written in `mo.md()`: three key findings (branch performance, program patterns, seasonal dynamics), each citing specific numbers *from your own results*, plus one concrete, actionable recommendation for library management — the assignment's standard is "specific and actionable," naming a program, branch, or budget move, rather than a vague "improve programs." This is the executive-summary discipline of §17.5: claim, number, implication, action.
+**Task 5: Data Narrative (20 points, 5 per section).** A structured findings summary written in `mo.md()`: three key findings (branch performance, program patterns, seasonal dynamics), each citing specific numbers *from your own results*, plus one concrete, actionable recommendation for library management — the assignment's standard is "specific and actionable," naming a program, branch, or budget move, rather than a vague "improve programs." This is the executive-summary discipline of §16.2.5: claim, number, implication, action.
 
-**Task 6: Limitations and Next Steps (15 points).** Three *distinct* limitations (9 points, 3 each) — what the analysis cannot tell us and why that matters — and three concrete follow-up analyses (6 points, 2 each), each naming the data you would need, the method you would use, and the question it would answer. §17.5's limitations section shows the shape: specific boundaries, not vague humility.
+**Task 6: Limitations and Next Steps (15 points).** Three *distinct* limitations (9 points, 3 each) — what the analysis cannot tell us and why that matters — and three concrete follow-up analyses (6 points, 2 each), each naming the data you would need, the method you would use, and the question it would answer. §16.2.5's limitations section shows the shape: specific boundaries, not vague humility.
 
-**Bonus: Interactive marimo Element (10 points).** One marimo UI element — a branch-selector dropdown, a season multiselect, or an attendance-threshold slider — that reactively filters data or updates a chart, with the result displayed. Grading rewards the element (3), working reactive filtering (4), and a clear display (3). The widget pattern (create in one cell, read `.value` in another) is §17.4's closing example.
+**Bonus: Interactive marimo Element (10 points).** One marimo UI element — a branch-selector dropdown, a season multiselect, or an attendance-threshold slider — that reactively filters data or updates a chart, with the result displayed. Grading rewards the element (3), working reactive filtering (4), and a clear display (3). The widget pattern (create in one cell, read `.value` in another) is §16.2.4's closing example.
 
 Two standing rules from the assignment: use the underscore prefix for cell-scoped variables (loop variables, figures, temporaries) but *not* for variables returned from a cell, and put written responses inside `mo.md()` calls. Review this chapter's coffee-shop walkthrough as your worked model — then let the library data tell its own story.
 
@@ -1224,6 +1224,6 @@ Presentation turned those tables into an argument: six charts, each with a title
 
 ## What's Next
 
-There is no Module 18 — this is the end of MIS501, and the skills now compound on their own. Over seventeen modules you went from printing a first line of Python to running a complete analytical operation: core Python for logic and structure (Modules 1–8), Polars, visualization, marimo, and DuckDB for data work (9–13), web scraping and APIs for acquisition (14–15), and a two-part capstone that framed a question and delivered a defensible answer (16–17).
+There is no Module 17 — this is the end of MIS501, and the skills now compound on their own. Over sixteen modules you went from printing a first line of Python to running a complete analytical operation: core Python for logic and structure (Modules 1–8), Polars, visualization, marimo, and DuckDB for data work (9–13), web scraping and APIs for acquisition (14–15), and a two-part capstone that framed a question and delivered a defensible answer (16.1–16.2).
 
 Where these skills go from here is wherever data meets a decision. The workflow you practiced — frame the question, acquire and inspect the data, clean it, aggregate it, visualize it, and write the story with its limitations attached — is the daily shape of analytics work in finance, operations, marketing, and management, and it transfers unchanged to whatever tools your employer happens to run. Your capstone notebook is a portfolio piece: it demonstrates not just coding ability but the capacity to take a vague business question and return actionable insight in a reproducible document, which is the rarer skill. Keep the habits that made it work — reproducible seeds and scripts, narrative around every result, honest limitations — and keep practicing on real, messy datasets, because those habits, more than any single library, are what you actually learned here. Congratulations on completing the course.

@@ -978,7 +978,7 @@ The missing step is flattening: loop over the records and build a simple diction
 
 ---
 
-## Module 16: Capstone: Proposal & Data Acquisition
+## Module 16.1: Capstone: Proposal & Data Acquisition
 
 ### Q: How can I tell whether my research question is specific enough?
 
@@ -1040,11 +1040,11 @@ Synthetic data also has one teaching advantage real data cannot offer: the groun
 
 Because an average without its sample size is a classic way to fool yourself. A group mean resting on three rows and one resting on thirty look identical in a summary table, but they deserve different levels of trust — a handful of extreme rows can drag a small group's average anywhere. Including a record count per group (and, where it helps, a second statistic like the median) lets the reader judge whether each figure is solid or a fluke.
 
-The chapter's walkthrough models the habit in every grouped table, and it carries into Module 17's warning about group-by results generally: check the supporting evidence before treating a table as proof of an effect.
+The chapter's walkthrough models the habit in every grouped table, and it carries into Module 16.2's warning about group-by results generally: check the supporting evidence before treating a table as proof of an effect.
 
 ---
 
-## Module 17: Capstone: Analysis & Presentation
+## Module 16.2: Capstone: Analysis & Presentation
 
 ### Q: Why does the chapter analyze a coffee-shop chain when my assignment is about a library system?
 

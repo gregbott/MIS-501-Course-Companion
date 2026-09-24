@@ -1,4 +1,4 @@
-# Module 16: Capstone: Proposal & Data Acquisition
+# Module 16.1: Capstone: Proposal & Data Acquisition
 
 ## Introduction
 
@@ -19,7 +19,7 @@ By the end of this module, you should be able to:
 
 ---
 
-## 16.1 What Makes a Good Capstone Project?
+## 16.1.1 What Makes a Good Capstone Project?
 
 Your capstone project is an opportunity to apply everything you have learned in this course to a question you genuinely care about. Before writing any code, it pays to know what "good" looks like. A strong project shares five characteristics:
 
@@ -37,7 +37,7 @@ Think of the capstone as a "proof of concept" analysis, not a doctoral dissertat
 
 ---
 
-## 16.2 Choosing a Research Question
+## 16.1.2 Choosing a Research Question
 
 The research question is the foundation of your project. It determines what data you need, what analysis you perform, and how you present your results. Time spent sharpening the question is the highest-leverage work you will do in the whole capstone.
 
@@ -77,7 +77,7 @@ A useful test: can you imagine a chart or table that **answers** your question? 
 
 ---
 
-## 16.3 Evaluating Data Sources
+## 16.1.3 Evaluating Data Sources
 
 Once you have a question, you need data. You have already practiced every acquisition route this course offers: files (Modules 8-9), web scraping (Module 14), and REST APIs (Module 15). The decision framework below summarizes when each route makes sense:
 
@@ -105,11 +105,11 @@ Before committing to a data source, verify six things:
 
 Relevance is the criterion beginners most often skip: a dataset can be large, fresh, and free — and still lack the one column your dependent variable requires. Open the data (or its documentation) and confirm the columns exist before you commit.
 
-Spending 30 minutes evaluating your data source up front can save hours of frustration later. The Module 16 assignment formalizes this habit: you will run two candidate sources through this exact checklist and justify your selection.
+Spending 30 minutes evaluating your data source up front can save hours of frustration later. The Module 16.1 assignment formalizes this habit: you will run two candidate sources through this exact checklist and justify your selection.
 
 ---
 
-## 16.4 Writing the Proposal
+## 16.1.4 Writing the Proposal
 
 A project proposal is a short document (roughly one page) that tells the reader what you plan to do and why. It is also a planning device for you: filling in the template forces every vague intention to become a concrete commitment. Use the following seven-part structure:
 
@@ -151,7 +151,7 @@ Notice that data availability enters at step 3, *before* you commit. Interest an
 
 ---
 
-## 16.5 Example Walkthrough: Bike-Sharing Usage Patterns
+## 16.1.5 Example Walkthrough: Bike-Sharing Usage Patterns
 
 The rest of this module works through a **complete example** of the capstone's first phase, from proposal to preliminary findings. Treat it as a model for your own project — the same steps, in the same order, that your assignment asks of you.
 
@@ -171,7 +171,7 @@ The rest of this module works through a **complete example** of the capstone's f
 
 **Timeline:** Week 1 — acquire data, clean, and perform exploratory analysis. Week 2 — build final visualizations, write findings, and assemble the executive summary.
 
-Check this proposal against §16.1's five criteria: the question names a dependent variable (ridership) and independent variables (weather, time of day); the data is obtainable and above the size minimum; the answer informs real operational decisions; the scope fits two weeks; and the methodology uses course tools. That is the standard your own proposal should meet.
+Check this proposal against §16.1.1's five criteria: the question names a dependent variable (ridership) and independent variables (weather, time of day); the data is obtainable and above the size minimum; the answer informs real operational decisions; the scope fits two weeks; and the methodology uses course tools. That is the standard your own proposal should meet.
 
 ### Step 1 — Acquire the Data
 
@@ -630,7 +630,7 @@ Exploration ends by asking: what preliminary answers do we have, and how big are
 
     *Source: `computations/module16_examples.py` — `demo_effect_sizes()`*
 
-In Module 17, this analysis would continue with deeper dives: cross-tabulations (weather by hour), seasonal trends, station-level comparisons, and a polished executive summary presenting the results.
+In Module 16.2, this analysis would continue with deeper dives: cross-tabulations (weather by hour), seasonal trends, station-level comparisons, and a polished executive summary presenting the results.
 
 ### Common Misconceptions
 
@@ -645,9 +645,9 @@ In Module 17, this analysis would continue with deeper dives: cross-tabulations 
 
 ## Reflection Questions
 
-1. Take a weak question from §16.2 — say, "Can we predict the stock market?" — and repair it: write two narrower versions that would pass the five criteria from §16.1, and name the dependent and independent variables for each.
+1. Take a weak question from §16.1.2 — say, "Can we predict the stock market?" — and repair it: write two narrower versions that would pass the five criteria from §16.1.1, and name the dependent and independent variables for each.
 2. The chart test says a question is specific enough when you can imagine the chart that answers it. Why does this test work? What does being able to picture the chart force you to have already decided?
-3. You need a year of competitor pricing data. It exists as a Kaggle CSV (updated annually), a commercial API (fresh, rate-limited, requires a key), and on the competitor's website (scrapable). Using the §16.3 framework, argue for one route for a two-week capstone — and name the condition under which you would switch.
+3. You need a year of competitor pricing data. It exists as a Kaggle CSV (updated annually), a commercial API (fresh, rate-limited, requires a key), and on the competitor's website (scrapable). Using the §16.1.3 framework, argue for one route for a two-week capstone — and name the condition under which you would switch.
 4. The walkthrough generated its own data with known built-in effects, and Step 5 recovered them. What can this "known ground truth" setup teach you that a real dataset cannot — and what can it never teach you about real analysis work?
 5. Your proposal names one research question, but week-one exploration reveals the data cannot answer it — though it *can* answer a neighboring question. What should you do, and why is this an expected outcome rather than a failure of planning?
 6. Why does the module insist on the inspection ritual (shape, schema, nulls, `describe()`) *before* any group-by or chart? For each of the four checks, name one concrete problem it would catch early.
@@ -656,25 +656,25 @@ In Module 17, this analysis would continue with deeper dives: cross-tabulations 
 
 ## Your Assignment
 
-The Module 16 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Blackboard**. The final reflection section is not graded separately — it counts toward participation.
+The Module 16.1 assignment is worth **100 points plus a 10-point bonus**. You complete it in a **marimo notebook (`.py` file)** and submit the file to **Blackboard**. The final reflection section is not graded separately — it counts toward participation.
 
 This is **not a typical coding-drill assignment**: it is the first half of your capstone, and most tasks ask you to write about *your own* project. So that you can complete the technical tasks even if you have not yet found your own data, the notebook provides a fictional hotel-reviews sample dataset (well above the size minimums) as a stand-in — you can swap in your real data later. The tasks follow this module's sections in order: question, source evaluation, acquisition, inspection, exploration, proposal.
 
-**Task 1: Research Question (15 points).** In prose (a `mo.md()` cell), state your research question in one to two sentences, explain in two to three sentences who benefits from the answer and what decision it informs, and identify your dependent variable plus at least two independent variables. §16.2 defines all three requirements — the grading rubric mirrors its specific/motivated/variables structure.
+**Task 1: Research Question (15 points).** In prose (a `mo.md()` cell), state your research question in one to two sentences, explain in two to three sentences who benefits from the answer and what decision it informs, and identify your dependent variable plus at least two independent variables. §16.1.2 defines all three requirements — the grading rubric mirrors its specific/motivated/variables structure.
 
-**Task 2: Data Source Evaluation (15 points).** Evaluate at least two candidate data sources for your project by filling in the six-point quality checklist (size, completeness, relevance, recency, accessibility, license) for each, then select one and justify the choice. The checklist and the source-type trade-offs are §16.3.
+**Task 2: Data Source Evaluation (15 points).** Evaluate at least two candidate data sources for your project by filling in the six-point quality checklist (size, completeness, relevance, recency, accessibility, license) for each, then select one and justify the choice. The checklist and the source-type trade-offs are §16.1.3.
 
-**Task 3: Data Acquisition & Loading (20 points).** Load your chosen dataset into a Polars DataFrame named `my_data` — from your own CSV, API, or scraped data, or the provided sample. The DataFrame must have at least 100 rows and at least 5 columns; you print its shape in the rows-by-columns format the task specifies and display the first ten rows. This is §16.5 Step 1; the loading routes themselves are Module 9 (`read_csv`), Module 15 (APIs), and Module 14 (scraping).
+**Task 3: Data Acquisition & Loading (20 points).** Load your chosen dataset into a Polars DataFrame named `my_data` — from your own CSV, API, or scraped data, or the provided sample. The DataFrame must have at least 100 rows and at least 5 columns; you print its shape in the rows-by-columns format the task specifies and display the first ten rows. This is §16.1.5 Step 1; the loading routes themselves are Module 9 (`read_csv`), Module 15 (APIs), and Module 14 (scraping).
 
-**Task 4: Data Inspection (15 points).** Run the four inspection checks on `my_data` — shape, schema, `describe()`, and null counts — then answer three written questions: the dataset's dimensions, whether (and where) values are missing, and whether any data types need fixing. This is §16.5 Step 2 applied to your data.
+**Task 4: Data Inspection (15 points).** Run the four inspection checks on `my_data` — shape, schema, `describe()`, and null counts — then answer three written questions: the dataset's dimensions, whether (and where) values are missing, and whether any data types need fixing. This is §16.1.5 Step 2 applied to your data.
 
-**Task 5: Exploratory Analysis (20 points).** Perform at least two `group_by` aggregations on different columns (each computing at least one summary statistic), build at least one labeled Plotly Express chart, and write a two-to-three-sentence interpretation for each aggregation and for the chart. §16.5 Steps 3-4 model exactly this sequence; the aggregation mechanics are Module 10 and the charting is Module 11.
+**Task 5: Exploratory Analysis (20 points).** Perform at least two `group_by` aggregations on different columns (each computing at least one summary statistic), build at least one labeled Plotly Express chart, and write a two-to-three-sentence interpretation for each aggregation and for the chart. §16.1.5 Steps 3-4 model exactly this sequence; the aggregation mechanics are Module 10 and the charting is Module 11.
 
-**Task 6: Written Proposal (15 points).** Complete the seven-section proposal template — title, research question, background and motivation, data source(s), methodology, expected deliverables, timeline — with substantive content in every section. Grading also rewards internal consistency: the question must match the data, the methodology must match your tools, and the timeline must be realistic. The template is §16.4; the model proposal in §16.5 shows one filled in.
+**Task 6: Written Proposal (15 points).** Complete the seven-section proposal template — title, research question, background and motivation, data source(s), methodology, expected deliverables, timeline — with substantive content in every section. Grading also rewards internal consistency: the question must match the data, the methodology must match your tools, and the timeline must be realistic. The template is §16.1.4; the model proposal in §16.1.5 shows one filled in.
 
-**Bonus: Additional Visualization (10 points).** Create a second Plotly Express chart that examines your data from a different angle than your Task 5 chart — a different chart type or different columns — with a title, axis labels, and a written explanation connecting it to your research question. §16.5 Step 4 and Module 11's chart-type catalog are the references.
+**Bonus: Additional Visualization (10 points).** Create a second Plotly Express chart that examines your data from a different angle than your Task 5 chart — a different chart type or different columns — with a title, axis labels, and a written explanation connecting it to your research question. §16.1.5 Step 4 and Module 11's chart-type catalog are the references.
 
-**Reflection (participation).** Four questions about how you chose your question, what was hardest about finding data, what exploration revealed, and what risks you see for the full capstone. Honest answers help your instructor see where to support you in Module 17.
+**Reflection (participation).** Four questions about how you chose your question, what was hardest about finding data, what exploration revealed, and what risks you see for the full capstone. Honest answers help your instructor see where to support you in Module 16.2.
 
 A final mechanical note from the assignment instructions: cell-scoped variables (loop variables, temporaries, figures) take the underscore prefix, while variables returned from a cell — like `my_data` — do not.
 
@@ -686,10 +686,10 @@ This module opened the capstone by teaching you to engineer its foundation: the 
 
 Data acquisition starts before any download: the source-type framework (files, APIs, scraping, internal/synthetic) matches the acquisition route to the question, and the six-point quality checklist — size, completeness, relevance, recency, accessibility, license — catches doomed data sources in minutes instead of hours. The seven-part proposal then converts intentions into a plan: title, question, background, data, methodology, deliverables, timeline. The proposal is a starting point, not a contract; questions legitimately evolve on contact with data.
 
-The bike-sharing walkthrough modeled the whole first phase. Acquire the data (generated here; downloaded, fetched, or scraped in your project) and confirm its shape. Inspect it — schema, null counts, `describe()` — before trusting it. Explore it with `group_by` aggregations aimed at each independent variable, reading sample sizes and medians alongside means. Visualize the summaries with Plotly Express, and distill the findings into quantified statements: commute-hour peaks, a sunny-weather uplift, a weekend bump. That closing move — numbers attached to claims — is what turns exploration into the raw material of an executive summary, and it is precisely where Module 17 picks up.
+The bike-sharing walkthrough modeled the whole first phase. Acquire the data (generated here; downloaded, fetched, or scraped in your project) and confirm its shape. Inspect it — schema, null counts, `describe()` — before trusting it. Explore it with `group_by` aggregations aimed at each independent variable, reading sample sizes and medians alongside means. Visualize the summaries with Plotly Express, and distill the findings into quantified statements: commute-hour peaks, a sunny-weather uplift, a weekend bump. That closing move — numbers attached to claims — is what turns exploration into the raw material of an executive summary, and it is precisely where Module 16.2 picks up.
 
 ---
 
 ## What's Next
 
-Module 17 — **Capstone: Analysis & Presentation** — takes your project from exploration to completion. You will deepen the analysis begun here (cross-tabulations, trends over time, comparisons across segments), build polished visualizations, and write up findings and recommendations in an executive summary suitable for a decision-maker — a finished, professional-quality analysis you can include in your portfolio. Everything you drafted in this module's proposal becomes the roadmap: week two of your timeline starts now.
+Module 16.2 — **Capstone: Analysis & Presentation** — takes your project from exploration to completion. You will deepen the analysis begun here (cross-tabulations, trends over time, comparisons across segments), build polished visualizations, and write up findings and recommendations in an executive summary suitable for a decision-maker — a finished, professional-quality analysis you can include in your portfolio. Everything you drafted in this module's proposal becomes the roadmap: week two of your timeline starts now.

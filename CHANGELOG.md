@@ -9,6 +9,14 @@ project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+- The companion now matches the course's 16-module structure. The two capstone
+  chapters are Module 16.1 (Proposal & Data Acquisition) and Module 16.2
+  (Analysis & Presentation), matching Blackboard, instead of Modules 16 and 17.
+  Their sections are renumbered 16.1.1–16.1.5 and 16.2.1–16.2.5, and every
+  cross-reference, the navigation, the home-page roadmap, the Q&A Reference
+  headings and the "seventeen modules" wording were updated. Page URLs are
+  unchanged, but the section anchors on both capstone pages and the two capstone
+  Q&A anchors changed (see BLACKBOARD_GUIDE.md appendices B and C).
 - Submission platform corrected from Brightspace to Blackboard throughout the
   companion (20 references: the *Your Assignment* section of all 17 module
   chapters, two further mentions in Module 1, and one in the Q&A Reference).

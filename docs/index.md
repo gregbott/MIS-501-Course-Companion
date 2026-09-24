@@ -52,6 +52,6 @@ By the end of MIS501, you will be able to:
 | 1–8 | Core Python: environment setup, variables, control flow, functions, strings & regex, lists & tuples, dictionaries & sets, files & JSON |
 | 9–13 | Data tooling: Polars, transformations & aggregations, visualization, marimo interactivity, DuckDB & SQL |
 | 14–15 | Data acquisition: web scraping, REST APIs |
-| 16–17 | Capstone: proposal & data acquisition, analysis & presentation |
+| 16 | Capstone, in two parts: 16.1 proposal & data acquisition, 16.2 analysis & presentation |
 
 Start with [Module 1: Why Python & Environment Setup](modules/01-why-python-and-setup.md).

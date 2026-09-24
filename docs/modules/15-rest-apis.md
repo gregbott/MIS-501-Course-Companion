@@ -1247,4 +1247,4 @@ The destination of all this acquisition work is analysis. The pipeline pattern �
 
 ## What's Next
 
-Module 16 begins your **Capstone Project: Proposal & Data Acquisition**. You will choose a real-world dataset — from a file, an API, or web scraping — define a research question worth answering, and build a project proposal with initial data exploration. Everything from this module applies directly: if your capstone data comes from an API, your proposal's acquisition section will be a `requests` pipeline with the error handling, pagination, and caching habits you just practiced.
+Module 16.1 begins your **Capstone Project: Proposal & Data Acquisition**. You will choose a real-world dataset — from a file, an API, or web scraping — define a research question worth answering, and build a project proposal with initial data exploration. Everything from this module applies directly: if your capstone data comes from an API, your proposal's acquisition section will be a `requests` pipeline with the error handling, pagination, and caching habits you just practiced.

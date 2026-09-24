@@ -12,7 +12,8 @@ plus the conventions to use them consistently.
 
 ## 1. What the companion is
 
-The MIS501 Course Companion is a 17-chapter student-facing reference that parallels
+The MIS501 Course Companion is a 17-chapter student-facing reference for the 16-module
+course (the Module 16 capstone has two chapters, 16.1 and 16.2). It parallels
 the course's video lectures and marimo notebooks. Each chapter covers the same
 concepts as its module, with worked examples, common misconceptions, reflection
 questions, and a plain-language walkthrough of the module's graded assignment.
@@ -78,7 +79,7 @@ https://gregbott.github.io/MIS-501-Course-Companion/reference/qa/     (Q&A Refer
 https://gregbott.github.io/MIS-501-Course-Companion/                  (Home)
 ```
 
-**Appendix A** lists all 17 module URLs in a copy-paste table.
+**Appendix A** lists all 17 chapter URLs in a copy-paste table.
 
 ---
 
@@ -95,7 +96,7 @@ https://gregbott.github.io/MIS-501-Course-Companion/modules/03-control-flow/#33-
 That lands the reader directly on *3.3 for Loops and range()*.
 
 Each module chapter has the same section skeleton, which makes the conventions easy to
-apply across all 17:
+apply across all 17 chapters:
 
 | Section | Anchor | Typical Blackboard use |
 |---|---|---|
@@ -107,7 +108,7 @@ apply across all 17:
 | Chapter Summary | `#chapter-summary` | Pre-exam review |
 | What's Next | `#whats-next` | End-of-module wrap |
 
-**Appendix B** lists every section anchor for all 17 modules. **Appendix C** does the
+**Appendix B** lists every section anchor for all 17 chapters. **Appendix C** does the
 same for the Q&A Reference, so you can link to just the Module 7 questions rather than
 the whole 134-question page.
 
@@ -221,7 +222,7 @@ link texts out of the page; "click here" tells them nothing.
 
 ## 7. A recommended per-module build pattern
 
-Applied to each of the 17 modules, this gives students the companion at the three
+Applied to each of the 17 chapters, this gives students the companion at the three
 moments they need it. Steal what fits your shell.
 
 | Where in Blackboard | What to link | Anchor |
@@ -285,7 +286,7 @@ about five minutes and catches everything.
 ## 10. How the companion refers to the LMS
 
 The companion names **Blackboard** as the submission platform throughout — once in
-each of the 17 module chapters (in the *Your Assignment* section, where it tells
+each of the 17 chapters (in the *Your Assignment* section, where it tells
 students to submit the marimo `.py` file), twice more in Module 1, and once in the
 Q&A Reference. Twenty references in all, and they are consistent with the Blackboard
 shell you are building.
@@ -335,8 +336,8 @@ Copy the URL column straight into Blackboard's **Link URL** field.
 | 13 | DuckDB: SQL-Based Data Analysis | `https://gregbott.github.io/MIS-501-Course-Companion/modules/13-duckdb-sql/` |
 | 14 | Web Scraping | `https://gregbott.github.io/MIS-501-Course-Companion/modules/14-web-scraping/` |
 | 15 | REST APIs & Data Acquisition | `https://gregbott.github.io/MIS-501-Course-Companion/modules/15-rest-apis/` |
-| 16 | Capstone: Proposal & Data Acquisition | `https://gregbott.github.io/MIS-501-Course-Companion/modules/16-capstone-proposal/` |
-| 17 | Capstone: Analysis & Presentation | `https://gregbott.github.io/MIS-501-Course-Companion/modules/17-capstone-analysis/` |
+| 16.1 | Capstone: Proposal & Data Acquisition | `https://gregbott.github.io/MIS-501-Course-Companion/modules/16-capstone-proposal/` |
+| 16.2 | Capstone: Analysis & Presentation | `https://gregbott.github.io/MIS-501-Course-Companion/modules/17-capstone-analysis/` |
 
 Two more pages worth linking:
 
@@ -626,7 +627,7 @@ https://gregbott.github.io/MIS-501-Course-Companion/modules/03-control-flow/#33-
 | Chapter Summary | `#chapter-summary` |
 | What's Next | `#whats-next` |
 
-### Module 16: Capstone: Proposal & Data Acquisition
+### Module 16.1: Capstone: Proposal & Data Acquisition
 
 `https://gregbott.github.io/MIS-501-Course-Companion/modules/16-capstone-proposal/`
 
@@ -634,17 +635,17 @@ https://gregbott.github.io/MIS-501-Course-Companion/modules/03-control-flow/#33-
 |---------|------------------|
 | Introduction | `#introduction` |
 | Learning Objectives | `#learning-objectives` |
-| 16.1 What Makes a Good Capstone Project? | `#161-what-makes-a-good-capstone-project` |
-| 16.2 Choosing a Research Question | `#162-choosing-a-research-question` |
-| 16.3 Evaluating Data Sources | `#163-evaluating-data-sources` |
-| 16.4 Writing the Proposal | `#164-writing-the-proposal` |
-| 16.5 Example Walkthrough: Bike-Sharing Usage Patterns | `#165-example-walkthrough-bike-sharing-usage-patterns` |
+| 16.1.1 What Makes a Good Capstone Project? | `#1611-what-makes-a-good-capstone-project` |
+| 16.1.2 Choosing a Research Question | `#1612-choosing-a-research-question` |
+| 16.1.3 Evaluating Data Sources | `#1613-evaluating-data-sources` |
+| 16.1.4 Writing the Proposal | `#1614-writing-the-proposal` |
+| 16.1.5 Example Walkthrough: Bike-Sharing Usage Patterns | `#1615-example-walkthrough-bike-sharing-usage-patterns` |
 | Reflection Questions | `#reflection-questions` |
 | Your Assignment | `#your-assignment` |
 | Chapter Summary | `#chapter-summary` |
 | What's Next | `#whats-next` |
 
-### Module 17: Capstone: Analysis & Presentation
+### Module 16.2: Capstone: Analysis & Presentation
 
 `https://gregbott.github.io/MIS-501-Course-Companion/modules/17-capstone-analysis/`
 
@@ -652,11 +653,11 @@ https://gregbott.github.io/MIS-501-Course-Companion/modules/03-control-flow/#33-
 |---------|------------------|
 | Introduction | `#introduction` |
 | Learning Objectives | `#learning-objectives` |
-| 17.1 The Capstone Workflow: From Raw Data to Deliverable | `#171-the-capstone-workflow-from-raw-data-to-deliverable` |
-| 17.2 Analysis with Polars | `#172-analysis-with-polars` |
-| 17.3 Analysis with DuckDB | `#173-analysis-with-duckdb` |
-| 17.4 Visualizations and Interactive Elements | `#174-visualizations-and-interactive-elements` |
-| 17.5 Communicating Results | `#175-communicating-results` |
+| 16.2.1 The Capstone Workflow: From Raw Data to Deliverable | `#1621-the-capstone-workflow-from-raw-data-to-deliverable` |
+| 16.2.2 Analysis with Polars | `#1622-analysis-with-polars` |
+| 16.2.3 Analysis with DuckDB | `#1623-analysis-with-duckdb` |
+| 16.2.4 Visualizations and Interactive Elements | `#1624-visualizations-and-interactive-elements` |
+| 16.2.5 Communicating Results | `#1625-communicating-results` |
 | Reflection Questions | `#reflection-questions` |
 | Your Assignment | `#your-assignment` |
 | Chapter Summary | `#chapter-summary` |
@@ -685,6 +686,6 @@ Base URL: `https://gregbott.github.io/MIS-501-Course-Companion/reference/qa/`
 | Module 13: DuckDB: SQL-Based Data Analysis | `#module-13-duckdb-sql-based-data-analysis` |
 | Module 14: Web Scraping | `#module-14-web-scraping` |
 | Module 15: REST APIs & Data Acquisition | `#module-15-rest-apis-data-acquisition` |
-| Module 16: Capstone: Proposal & Data Acquisition | `#module-16-capstone-proposal-data-acquisition` |
-| Module 17: Capstone: Analysis & Presentation | `#module-17-capstone-analysis-presentation` |
+| Module 16.1: Capstone: Proposal & Data Acquisition | `#module-161-capstone-proposal-data-acquisition` |
+| Module 16.2: Capstone: Analysis & Presentation | `#module-162-capstone-analysis-presentation` |
 

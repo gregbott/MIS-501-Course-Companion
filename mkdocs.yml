@@ -80,8 +80,8 @@ nav:
       - "13. DuckDB: SQL-Based Data Analysis": modules/13-duckdb-sql.md
       - "14. Web Scraping": modules/14-web-scraping.md
       - "15. REST APIs & Data Acquisition": modules/15-rest-apis.md
-      - "16. Capstone: Proposal & Data Acquisition": modules/16-capstone-proposal.md
-      - "17. Capstone: Analysis & Presentation": modules/17-capstone-analysis.md
+      - "16.1 Capstone: Proposal & Data Acquisition": modules/16-capstone-proposal.md
+      - "16.2 Capstone: Analysis & Presentation": modules/17-capstone-analysis.md
   - Reference:
       - "Q&A Reference": reference/qa.md
   - Changelog: changelog.md
